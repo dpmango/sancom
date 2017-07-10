@@ -80,16 +80,59 @@
     font-style: normal;
 }
 /* buttons */
-button {}
+button {
+    border: 0;
+    -webkit-box-shadow: 0;
+            box-shadow: 0;
+}
 button:focus {
     outline: none;
 }
 .btn {
     position: relative;
     display: inline-block;
+    overflow: hidden;
     text-align: center;
     -webkit-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
+}
+.btn span {
+    position: relative;
+    z-index: 2;
+}
+.btn span:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    display: block;
+    width: 50px;
+    height: 50px;
+    content: ' ';
+    -webkit-transition: all .25s linear;
+    transition: all .25s linear;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+        -ms-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+}
+.btn:hover span {}
+.btn:hover span:after {
+    -webkit-transform: translate(-50%, -50%) scale(5);
+        -ms-transform: translate(-50%, -50%) scale(5);
+            transform: translate(-50%, -50%) scale(5);
+}
+.btn--primary {
+    padding: 20px 35px;
+    background: #6000FF;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .22px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.btn--primary span {}
+.btn--primary span:after {
+    background: #39FF4A;
 }
 .btn:focus, .btn:active {
     outline: none;

@@ -1,5 +1,7 @@
 // buttons
 button
+  border: 0
+  box-shadow: 0
   &:focus
     outline: none
 
@@ -7,6 +9,36 @@ button
   display: inline-block
   position: relative
   text-align: center
+  overflow: hidden
   transition: all $transitionSpeed ease-in-out
+  span
+    position: relative
+    z-index: 2
+    &::after
+      display: block
+      content: ' '
+      position: absolute
+      z-index: -1
+      top: 50%
+      left: 50%
+      size: 50px
+      transform: translate(-50%, -50%) scale(0)
+      transition: all $transitionSpeed linear
+  &:hover
+    span
+      &::after
+        transform: translate(-50%, -50%) scale(5)
+  &--primary
+    padding: 20px 35px
+    font-size: 12px
+    letter-spacing: .22px
+    text-transform: uppercase
+    color: white
+    font-weight: 500
+    background: $colorPurple
+    span
+      &::after
+        background: $colorGreen
+
   &:focus, &:active
     outline: none
