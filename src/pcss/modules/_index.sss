@@ -113,3 +113,69 @@
       font-size: 14px
       margin-top: auto
       line-height: 1.42
+
+
+// FORMULA
+.formula
+  padding-top: 55px
+  padding-bottom: 70px
+  &__wrapper
+    margin-top: 20px
+    margin-left: 8.6%
+    p
+      font-size: 20px
+      line-height: 1.4
+  &__steps
+    margin-top: 40px
+    display: flex
+  &__step
+    flex: 0 1 260px
+    margin-right: 40px
+    &:last-child
+      margin-right: 0
+    &__num
+      color: $colorPurple
+      font-size: 160px
+      font-weight: 900
+      line-height: 1
+    &__title
+      color: $colorPurple
+      font-size: 21px
+      font-weight: 900
+      line-height: 1.3
+      margin-bottom: 20px
+    &__text
+      font-size: 14px
+      line-height: 1.42
+      margin-top: 20px
+    &:nth-child(1)
+      .formula__step__num
+        margin-left: -25px
+    &:nth-child(2)
+      .formula__step__num
+        margin-left: -10px
+
+
+// PROMO
+.promo
+  background: $colorPurple
+  color: white
+  padding-top: 70px
+  padding-bottom: 100px
+  &__wrapper
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    margin-top: 40px
+  &__text
+    flex: 0 1 360px
+    padding-right: 20px
+    font-size: 20px
+    line-height: 1.4
+  &__cta
+    font-family: 'AkzidenzGroteskPro-Ext'
+    margin-top: -5px
+    font-size: 36px
+    color: $colorGreen
+    line-height: 1.3
+    max-width: 680px
