@@ -7,8 +7,34 @@ doctype html
   body
     include shared/header.pug
 
-    // SECTION::START
-    section.section
+    // HOME::START
+    .hero
+      .container
+        .hero__wrapper
+          .hero__image
+            img(src='images/heroLines.png' srcset='images/heroLines@2x.png 2x')
+              
+          .b-text
+            p Мы опытная команда высококлассных специалистов  в области телекоммуникаций, предлагающие вашему бизнесу весь спектр необходимых решений для обеспечения…… 
+          .b-title 
+            span Нет, Стоп.
+          .b-text.b-text--narrow 
+            p Так бы мы начали, если бы SanCom был просто очередным провайдером связи и одной из тысячи телекоммуникационных компаний. 
+    
+    // ABOUT
+    .about
+      .container
+        .about__wrapper
+          .about__text
+            .b-title.b-title--purple Мы — другие!
+            .b-text
+              p SanCom — это настоящая  телекоммуникационная лаборатория.  
+              p В ней мы занимаемся настоящей алхимией связи, изобретаем и внедряем оригинальные и новые методы  и сервисы для звонковых центров (колл-центров), ориентированных на результативные продажи. 
+          .about__block
+            img(src='images/Asset2.png' srcset='images/Asset2@2x.png 2x')
+            p Ключевым показателем успеха нашей работы является рост заключённых сделок благодаря безупречной связи. Другими словами, ваш результат — это наш результат. 
+            
+        
 
     include shared/footer.pug
     include shared/scripts.pug

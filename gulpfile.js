@@ -136,9 +136,7 @@ gulp.task('pug', function buildHTML() {
 });
 
 gulp.task('pug-watch', ['pug'], function (done) {
-  browserSync.reload({
-    stream: true
-  });
+  browserSync.reload();
   done();
 });
 

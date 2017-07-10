@@ -1227,7 +1227,7 @@ button:focus {
 }
 .ui-checkbox input:checked + label {}
 .ui-checkbox input:checked + label:before {
-    border-color: #4ab68f;
+    border-color: #39FF4A;
 }
 .ui-checkbox input:checked + label:after {
     -webkit-transform: translateY(-50%) scale(1);
@@ -1351,7 +1351,7 @@ html.mfp-helper body {
             transform: scale(0.8);
 }
 .popup-buble.mfp-bg {
-    background: #4ab68f;
+    background: #39FF4A;
     opacity: 0;
     -webkit-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;

@@ -1,3 +1,78 @@
 // INDEX PAGE
 .hero
-  opacity: 1
+  background: linear-gradient(to bottom, #3A1E67, #6000FF)
+  color: white
+  &__wrapper
+    position: relative
+    min-height: 100vh
+    padding-top: 200px
+    padding-bottom: 75px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__image
+    position: absolute
+    right: 0
+    top: 140px
+
+
+.about
+  padding: 60px 0
+  &__wrapper
+    display: flex
+    justify-content: space-between
+  &__block
+    flex: 0 0 260px
+    position: relative
+    z-index: 3
+    padding: 45px 30px 35px 30px
+    background: linear-gradient(to bottom, #00FF4A, #6000FF)
+    margin-right: 8.6%
+    text-align: center
+    color: white
+    transform: translate3d(0,-160px,0)
+    p
+      margin-top: 40px
+      text-align: left
+      font-size: 14px
+      line-height: 1.42
+
+
+// COMMON
+.b-text
+  font-size: 25px
+  font-weight: 300
+  line-height: 1.6
+  margin-left: 8.6%
+  max-width: calc(660px + 8.6%)
+  &--narrow
+    max-width: calc(550px + 8.6%)
+
+.b-title
+  position: relative
+  font-size: 60px
+  font-weight: 900
+  letter-spacing: -1.09px
+  margin: 35px 0
+  &--purple
+    color: $colorPurple
+  span
+    position: relative
+    &::before
+      display: inline-block
+      content: ' '
+      position: absolute
+      bottom: 8px
+      left: 0
+      right: 0
+      border-bottom: 1px dashed $colorGreen
+    &::after
+      position: absolute
+      right: -75px
+      top: 55%
+      transform: translateY(-50%)
+      display: inline-block
+      content: ' '
+      background: url('../images/title-arrow@2x.png') no-repeat center
+      size: 61px 39px
+      background-size: contain

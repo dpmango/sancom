@@ -1,10 +1,15 @@
 // HEADER::START
-- var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"]
-
-header.header
-  .section
-    .row
-      .col-sm-12
-        ul
-          each item in list
-            li= item
+.header
+  .container
+    .header__wrapper
+      .header__logo
+        img(src='images/logo-white.png' srcset='images/logo-white@2x.png 2x')
+      ul.header__menu
+        li
+          a(href='#') Компания
+        li
+          a(href='#') Кейсы / результаты
+        li
+          a(href='#') Продукты / решения
+      .header__cta
+        a(href='#') Соединяем с результатом
