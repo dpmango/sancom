@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Project</title>
+    <title>Sancom Online</title>
     <style>
     *{padding: 0;  margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box;}
     body{
@@ -68,17 +68,16 @@
     }
     .ico-logo{
       margin: 5vh 3vw 0 3vw;
-      background-image: url(images/svg/logo.svg);
+      background-image: url(images/el/logo-white@2x.png);
       width: 207px;
       height: 65px;
     }
     .links{
        background-color: white;
        border-radius: 10px;
-       margin: 5vh 2.5vw;
+       margin: 5vh 2.5%;
        padding: 5vh 3vw;
-       width: 45vw;
-       flex: 1 1 40%
+       flex: 0 1 calc(50% - 5%);
        float: left;
        color: rgba(0,0,0,.7);
       }
@@ -118,7 +117,11 @@
       color: #838B90;
     }
     ul li a{
-      display: block;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
       padding: 1.3vh 0vw 1.3vh 1vw;
       width: 100%;
       color: #181B1E;
@@ -130,7 +133,7 @@
     ul li a span{
       opacity: .5;
       margin-left: .5em;
-      float: right;
+      text-align: right;
     }
     ul li a:hover{
       border-left: 4px solid #D2A36E;
@@ -164,7 +167,7 @@
         display: block;
       }
       .links{
-        width: 94vw;
+        flex-basis: 100%
       }
       ul li {
         margin-left: 10vw;
@@ -176,42 +179,26 @@
   <div class="container">
     <div class="fix">
       <div class="flex flexCenter">
-        <h1>Project name - (html/css)</h1>
+        <h1>SANCOM - (html/css)</h1>
         <i class="ico ico-logo"></i>
       </div>
     </div>
     <div class="content">
       <div class="flex flexWrap">
         <div class="links">
-          <h2>Mainpages</h2>
+          <h2>Front pages</h2>
           <ul class="">
             <li><a href="homepage.html" target="_blank">Homepage <span>(Главная)</span></a></li>
-            <li><a href="page.html" target="_blank">Page <span>(Страница)</span></a></li>
+
           </ul>
         </div>
         <div class="links">
-          <h2>Info pages</h2>
+          <h2>...</h2>
           <ul class="">
 
           </ul>
         </div>
       </div>
-
-      <div class="flex flexWrap">
-        <div class="links">
-          <h2>Email</h2>
-          <ul class="">
-
-          </ul>
-        </div>
-        <div class="links">
-          <h2>Helpers</h2>
-          <ul class="">
-
-          </ul>
-        </div>
-      </div>
-
 
     </div>
     <div class="fix">
