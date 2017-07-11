@@ -6,11 +6,22 @@ doctype html
 
   body
     .page
-      include shared/header.pug
+      include shared/header-dark.pug
 
       .page__content
-        
-          
+        .about-head
+          .container
+            .about-head__wrapper
+              .about-head__left
+                .about-head__block
+                  .b-title.b-title--purple SANCOM — это
+                  .b-text телекоммуникационная компания, ориентированная на эффективный результат. Другими словами, на увеличение числа сделок и прибыли нашего клиента!
+                .about-head__block
+                  .b-title.b-title--purple Цель —
+                  .b-text — улучшить главные показатели эффективности бизнеса наших клиентов, а именно — продажи  и количество успешных сделок.
+              .about-head__right
+                p SanCom в каждом проекте — это рост показателей ASR и ACD
+              
         include shared/cta.pug
         
       include shared/footer.pug

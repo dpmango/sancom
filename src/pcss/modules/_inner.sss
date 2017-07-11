@@ -1,4 +1,54 @@
 // SOME INNER PAGES CONTENT
+
+// ABOUT
+.about-head
+  overflow: hidden
+  &__wrapper
+    position: relative
+    display: flex
+    padding-top: 240px
+    padding-bottom: 75px
+    &::before
+      display: block
+      content: ' '
+      position: absolute
+      left: -215px
+      top: -300px
+      z-index: 1
+      background: url('../images/aboutHeroBg.png') no-repeat left center
+      width: 912px
+      height: 1510px
+      background-size: cover
+  &__block
+    flex: 1 1 auto
+    margin-bottom: 80px
+    .b-text
+      margin-top: 40px
+  &__left
+    position: relative
+    z-index: 2
+    flex: 0 1 58.3%
+    height: calc(100vh - 300px)
+    max-height: 700px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding-right: 20px
+  &__right
+    padding-top: 90px
+    position: relative
+    z-index: 2
+    flex: 0 1 41.6%
+    padding-left: 40px
+    p
+      font-family: 'AkzidenzGroteskPro-Ext'
+      margin-top: 0
+      font-size: 36px
+      line-height: 1.3
+      color: $colorGreen
+
+
+// PROJECTS
 .solutions
   padding-top: 80px
   padding-bottom: 50px

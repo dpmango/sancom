@@ -1441,6 +1441,84 @@ body, html {
     -webkit-box-flex: 0;
 }
 /* SOME INNER PAGES CONTENT */
+/* ABOUT */
+.about-head {
+    overflow: hidden;
+}
+.about-head__wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 240px;
+    padding-bottom: 75px;
+}
+.about-head__wrapper:before {
+    position: absolute;
+    top: -300px;
+    left: -215px;
+    z-index: 1;
+    display: block;
+    width: 912px;
+    height: 1510px;
+    background: url('../images/aboutHeroBg.png') no-repeat left center;
+    background-size: cover;
+    content: ' ';
+}
+.about-head__block {
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    margin-bottom: 80px;
+    -webkit-box-flex: 1;
+}
+.about-head__block .b-text {
+    margin-top: 40px;
+}
+.about-head__left {
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 0 1 58.3%;
+        -ms-flex: 0 1 58.3%;
+            flex: 0 1 58.3%;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    padding-right: 20px;
+    max-height: 700px;
+    height: -webkit-calc(100vh - 300px);
+    height: calc(100vh - 300px);
+    -webkit-box-flex: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+}
+.about-head__right {
+    position: relative;
+    z-index: 2;
+    -webkit-flex: 0 1 41.6%;
+        -ms-flex: 0 1 41.6%;
+            flex: 0 1 41.6%;
+    padding-top: 90px;
+    padding-left: 40px;
+    -webkit-box-flex: 0;
+}
+.about-head__right p {
+    margin-top: 0;
+    color: #39FF4A;
+    font-size: 36px;
+    font-family: 'AkzidenzGroteskPro-Ext';
+    line-height: 1.3;
+}
+/* PROJECTS */
 .solutions {
     padding-top: 80px;
     padding-bottom: 50px;
