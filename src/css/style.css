@@ -1446,7 +1446,7 @@ body, html {
     padding-bottom: 50px;
 }
 .solutions__wrapper {
-    margin: 40px 8.6%;
+    margin: 40px 8.6% 0 8.6%;
 }
 .solutions__intro {
     max-width: 740px;
@@ -1463,7 +1463,7 @@ body, html {
     display: -ms-flexbox;
     display: flex;
     margin-top: 70px;
-    padding-bottom: 0px;
+    padding-bottom: 60px;
 }
 .solutions__card:last-child {}
 .solutions__card:last-child:after {
