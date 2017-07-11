@@ -36,6 +36,12 @@
     font-family: 'AkzidenzGroteskPro-Ext';
     src: url('../fonts/AkzidenzGroteskPro-Ext.eot?#iefix') format('embedded-opentype'),  url('../fonts/AkzidenzGroteskPro-Ext.otf')  format('opentype'), url('../fonts/AkzidenzGroteskPro-Ext.woff') format('woff'), url('../fonts/AkzidenzGroteskPro-Ext.ttf')  format('truetype'), url('../fonts/AkzidenzGroteskPro-Ext.svg#AkzidenzGroteskPro-Ext') format('svg');
 }
+@font-face {
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'AkzidenzGroteskPro';
+    src: url('../fonts/AkzidenzGroteskPro-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/AkzidenzGroteskPro-Bold.otf')  format('opentype'), url('../fonts/AkzidenzGroteskPro-Bold.woff') format('woff'), url('../fonts/AkzidenzGroteskPro-Bold.ttf')  format('truetype'), url('../fonts/AkzidenzGroteskPro-Bold.svg#AkzidenzGroteskPro-Bold') format('svg');
+}
 * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -88,6 +94,7 @@ body, html {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    min-height: 100vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
 }
@@ -822,6 +829,20 @@ body, html {
 .header--fixed .header__cta:hover {
     color: #6000FF;
 }
+.header--dark {
+    color: #1F1F1F;
+}
+.header--dark .header__logo {}
+.header--dark .header__logo__white {
+    display: none;
+}
+.header--dark .header__logo__dark {
+    display: block;
+}
+.header--dark .header__cta {}
+.header--dark .header__cta:hover {
+    color: #6000FF;
+}
 /* FOOTER */
 .footer {
     -webkit-flex: 0;
@@ -917,7 +938,8 @@ body, html {
             justify-content: space-between;
     padding-top: 200px;
     padding-bottom: 75px;
-    min-height: 100vh;
+    max-height: 900px;
+    height: 100vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-box-pack: justify;
@@ -1082,6 +1104,9 @@ body, html {
 .formula {
     padding-top: 55px;
     padding-bottom: 70px;
+}
+.formula--hero {
+    padding-top: 200px;
 }
 .formula__wrapper {
     margin-top: 20px;
@@ -1330,6 +1355,7 @@ body, html {
 /* CTA */
 .cta {
     padding: 80px 0 75px 0;
+    background: #F5F5F5;
 }
 .cta__wrapper {
     margin: 0 8.6%;
@@ -1415,6 +1441,89 @@ body, html {
     -webkit-box-flex: 0;
 }
 /* SOME INNER PAGES CONTENT */
+.solutions {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.solutions__wrapper {
+    margin: 40px 8.6%;
+}
+.solutions__intro {
+    max-width: 740px;
+}
+.solutions__intro p {
+    color: #6000FF;
+    font-size: 20px;
+    line-height: 1.42;
+}
+.solutions__card {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 70px;
+    padding-bottom: 0px;
+}
+.solutions__card:last-child {}
+.solutions__card:last-child:after {
+    display: none;
+}
+.solutions__card:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    height: 5px;
+    background: -webkit-gradient(linear, right top, left top, from(#39FF4A), to(#6000FF));
+    background: -webkit-linear-gradient(right, #39FF4A, #6000FF);
+    background: linear-gradient(to left, #39FF4A, #6000FF);
+    content: ' ';
+}
+.solutions__card__left {
+    -webkit-flex: 0 0 270px;
+        -ms-flex: 0 0 270px;
+            flex: 0 0 270px;
+    color: #6000FF;
+    -webkit-box-flex: 0;
+}
+.solutions__card__right {
+    padding-left: 35px;
+}
+.solutions__card__name {
+    margin-bottom: 10px;
+    color: #6000FF;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 1.3;
+}
+.solutions__card__scope {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.solutions__card__label {
+    margin-top: 20px;
+    color: #39FF4A;
+    font-weight: 700;
+    font-size: 16px;
+}
+.solutions__card__text p {
+    font-size: 14px;
+    line-height: 1.42;
+}
+.solutions__card__text a {
+    color: #6000FF;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.solutions__card__text a:hover {
+    color: #39FF4A;
+}
+.t-purple {
+    color: #6000FF;
+}
 @-webkit-keyframes shake {
     from,to {
         -webkit-transform: translate3d(0, 0, 0);
