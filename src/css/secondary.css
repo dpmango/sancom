@@ -84,6 +84,7 @@ button {
     border: 0;
     -webkit-box-shadow: 0;
             box-shadow: 0;
+    cursor: pointer;
 }
 button:focus {
     outline: none;
@@ -122,7 +123,7 @@ button:focus {
             transform: translate(-50%, -50%) scale(5);
 }
 .btn--primary {
-    padding: 20px 35px;
+    padding: 23px 35px;
     background: #6000FF;
     color: white;
     text-transform: uppercase;

@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 $(document).ready(function () {
   ////////////////
@@ -17,10 +17,10 @@ $(document).ready(function () {
     error.appendTo(element.parent("div"));
   };
   var validateHighlight = function validateHighlight(element) {
-    $(element).parent('div').addClass("has-error");
+    $(element).addClass("has-error");
   };
   var validateUnhighlight = function validateUnhighlight(element) {
-    $(element).parent('div').removeClass("has-error");
+    $(element).removeClass("has-error");
   };
   var validateSubmitHandler = function validateSubmitHandler(form) {
     $(form).addClass('loading');
@@ -92,6 +92,34 @@ $(document).ready(function () {
       //     required: "Заполните это поле",
       //     minlength: "Введите корректный телефон"
       // }
+    }
+  });
+
+  /////////////////////
+  // CTA FORM
+  ////////////////////
+  $(".js-validateCta").validate({
+    errorPlacement: validateErrorPlacement,
+    highlight: function highlight(element) {
+      $(element).parent().find('button').addClass("no-no");
+      $(element).addClass('has-error');
+      setTimeout(function () {
+        $(element).parent().find('button').removeClass("no-no");
+      }, 700);
+    },
+    unhighlight: function unhighlight(element) {
+      $(element).parent().find('button').removeClass("no-no");
+      $(element).removeClass('has-error');
+    },
+    submitHandler: validateSubmitHandler,
+    rules: {
+      phone: validatePhone
+    },
+    messages: {
+      phone: {
+        required: "Заполните это поле",
+        minlength: "Введите корректный телефон"
+      }
     }
   });
 });

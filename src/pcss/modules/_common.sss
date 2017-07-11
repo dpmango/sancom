@@ -74,3 +74,37 @@
 // FOOTER
 .footer
   flex: 0
+  padding: 48px 0
+  background: #1F1F1F
+  color: white
+  &__wrapper
+    display: flex
+    align-items: center
+  &__logo
+    flex: 0 0 102px
+    img
+      max-width: 100%
+  &__contacts
+    margin-bottom: 6px
+    flex: 0 1 auto
+    display: flex
+    margin-left: auto
+    margin-right: auto
+    span
+      display: inline-block
+      color: $colorGreen
+      font-size: 14px
+      margin-left: 40px
+    a
+      transition: all $transitionSpeed $ease
+      &:hover
+        color: white
+  &__developer
+    flex: 0 0 auto
+    display: flex
+    align-items: center
+    margin-left: auto
+    font-size: 12px
+    display: flex
+    span
+      margin-right: 14px

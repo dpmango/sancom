@@ -17,6 +17,7 @@ var colorFunction = require("postcss-color-function");
 var mqpacker      = require('css-mqpacker');
 var pixrem        = require('pixrem');
 var rgba_fallback = require('postcss-color-rgba-fallback');
+var magicAnimations = require('postcss-animations');
 var opacity       = require('postcss-opacity');
 var pseudoel      = require('postcss-pseudoelements');
 var vmin          = require('postcss-vmin');
@@ -79,6 +80,7 @@ var processors = [
     short(),
     colorFunction(),
     svginline(),
+    magicAnimations(),
     autoprefixer({browsers: ['last 5 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']}),
     sorting(),
     // pixrem(),

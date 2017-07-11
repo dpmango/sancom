@@ -4364,6 +4364,20 @@ postcss-advanced-variables@1.2.2:
   dependencies:
     postcss "^5.0.10"
 
+postcss-animation.css-data@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-animation.css-data/-/postcss-animation.css-data-0.1.0.tgz#3a33a351f18df7a9cb70abe1188f8809bc750eab"
+
+postcss-animations@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/postcss-animations/-/postcss-animations-0.2.3.tgz#9fd9c6b8ad7490b22d2f218a4834711bad5b7366"
+  dependencies:
+    postcss "^6.0.2"
+    postcss-animation.css-data "^0.1.0"
+    postcss-magic.css-data "^0.1.0"
+    postcss-tuesday.css-data "^0.1.0"
+    postcss-value-parser "^3.3.0"
+
 postcss-apply@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/postcss-apply/-/postcss-apply-0.3.0.tgz#a2f37c5bdfa881e4c15f4f245ec0cd96dd2e70d5"
@@ -4647,6 +4661,10 @@ postcss-load-plugins@^2.3.0:
   dependencies:
     cosmiconfig "^2.1.1"
     object-assign "^4.1.0"
+
+postcss-magic.css-data@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-magic.css-data/-/postcss-magic.css-data-0.1.0.tgz#e83f49bdccb64dc27f5b9efa31b1cc411a7fbedf"
 
 postcss-media-minmax@^2.1.0:
   version "2.1.2"
@@ -4940,6 +4958,10 @@ postcss-svgo@^2.1.1:
     postcss-value-parser "^3.2.3"
     svgo "^0.7.0"
 
+postcss-tuesday.css-data@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-tuesday.css-data/-/postcss-tuesday.css-data-0.1.0.tgz#9811ae284e276a6a20d7fd8356577e8335bdace1"
+
 postcss-unique-selectors@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/postcss-unique-selectors/-/postcss-unique-selectors-2.0.2.tgz#981d57d29ddcb33e7b1dfe1fd43b8649f933ca1d"
@@ -4990,7 +5012,7 @@ postcss@^5.0.0, postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.
     source-map "^0.5.6"
     supports-color "^3.2.3"
 
-postcss@^6.0.1:
+postcss@^6.0.1, postcss@^6.0.2:
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.6.tgz#bba4d58e884fc78c840d1539e10eddaabb8f73bd"
   dependencies:

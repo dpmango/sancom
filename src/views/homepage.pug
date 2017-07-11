@@ -5,158 +5,173 @@ doctype html
   include shared/head.pug
 
   body
-    include shared/header.pug
+    .page
+      include shared/header.pug
 
-    // HOME::START
-    .hero
-      .container
-        .hero__wrapper
-          .hero__image
-            img(src='images/heroLines.png' srcset='images/heroLines@2x.png 2x')
-              
-          .b-text
-            p Мы опытная команда высококлассных специалистов  в области телекоммуникаций, предлагающие вашему бизнесу весь спектр необходимых решений для обеспечения…… 
-          .b-title 
-            span Нет, Стоп.
-          .b-text.b-text--narrow 
-            p Так бы мы начали, если бы SanCom был просто очередным провайдером связи и одной из тысячи телекоммуникационных компаний. 
-    
-    // ABOUT
-    .about
-      .container
-        .about__wrapper
-          .about__text
-            .b-title.b-title--purple Мы — другие!
-            .b-text
-              p SanCom — это настоящая  телекоммуникационная лаборатория.  
-              p В ней мы занимаемся настоящей алхимией связи, изобретаем и внедряем оригинальные и новые методы  и сервисы для звонковых центров (колл-центров), ориентированных на результативные продажи. 
-              a(href='#').btn.btn--primary
-                span Подробнее о Sancom
-          .about__block
-            img(src='images/Asset2.png' srcset='images/Asset2@2x.png 2x')
-            p Ключевым показателем успеха нашей работы является рост заключённых сделок благодаря безупречной связи. Другими словами, ваш результат — это наш результат. 
-    
-    // METRICS
-    .metrics
-      .container
-        .b-title Соединяем с результатом
-        .metrics__wrapper
-          // item
-          .metrics__item
-            .metrics__item__title ASR выше 60% ACD более 5 мин
-            .metrics__item__text Вырос процент результативных  звонков (ASR) после внедрения решений SanCom 
-          // item
-          .metrics__item
-            .metrics__item__title В течение  3-х часов
-            .metrics__item__text После резкого увеличения тарифов  на Швейцарию менеджеры SanCom подобрали маршрут с необходимыми нам параметрами и ценой
-          // item
-          .metrics__item
-            .metrics__item__title реакция менее  5 минут
-            .metrics__item__text Реакция службы поддержки SanCom обычно менее 5 минут, словно заявками нашей компании занимается персональный инженер
-          // item
-          .metrics__item
-            .metrics__item__title на 15% 
-            .metrics__item__text Вырос процент результативных  звонков (ASR) после внедрения решений SanCom 
-          // item
-          .metrics__item
-            .metrics__item__title передача DTMF отсутствие FAS
-            .metrics__item__text Качество прибалтийских и российских каналов SanCom обеспечено на очень высоком уровне – стабильная передача номера звонящего, прохождение факсов
-          // item
-          .metrics__item
-            .metrics__item__title Менее  <br> 1 часа
-            .metrics__item__text После резкого увеличения тарифов  на Швейцарию менеджеры SanCom подобрали маршрут с необходимыми нам параметрами и ценой
-          // item
-          .metrics__item
-            .metrics__item__title менее  <br> 30 минут
-            .metrics__item__text Заняла вся процедура подключения прямого российского телефонного номера с тестированием
-          // item
-          .metrics__item
-            .metrics__item__title на 15% 
-            .metrics__item__text Удалось снизить количество обрывов  связи во время звонка
-    
-    // FORMULA
-    .formula
-      .container
-        .b-title.b-title--purple Формула эффективной <br> связи от Sancom:
-        .formula__wrapper
-          p Наши лабораторные опыты привели к созданию собственной формулы связи.  <br> Формула эффективной связи от Sancom — это сумма из трёх слагаемых: 
-          .formula__steps
-            .formula__step
-              .formula__step__num 1
-              .formula__step__title Резервирование
-              .formulat__step__text Технологии автоматического резервирования — это золотой стандарт в работе SanCom. Все компоненты и соединения дублируются. При необходимости, резервные ресурсы   активируются автоматически, в течение  30 секунд.
-            .formula__step
-              .formula__step__num 2
-              .formula__step__title Предупреждение
-              .formulat__step__text Мы применяем современные превентивные меры. Это стало возможно благодаря постоянно обучаемой системе мониторинга. Система позволяет отслеживать признаки сбоев и устранять потенциальные проблемы .
-            .formula__step
-              .formula__step__num 3
-              .formula__step__title Реакция
-              .formulat__step__text Мгновенная реакция и обратная связь. Среднее время ответа клиенту на возникшую проблему — 3 минуты. Ответ не должен  задерживаться дольше 15 минут в рабочие часы.
+      .page__content
+        // HOME::START
+        .hero
+          .container
+            .hero__wrapper
+              .hero__image
+                img(src='images/heroLines.png' srcset='images/heroLines@2x.png 2x')
+                  
+              .b-text
+                p Мы опытная команда высококлассных специалистов  в области телекоммуникаций, предлагающие вашему бизнесу весь спектр необходимых решений для обеспечения…… 
+              .b-title 
+                span Нет, Стоп.
+              .b-text.b-text--narrow 
+                p Так бы мы начали, если бы SanCom был просто очередным провайдером связи и одной из тысячи телекоммуникационных компаний. 
+        
+        // ABOUT
+        .about
+          .container
+            .about__wrapper
+              .about__text
+                .b-title.b-title--purple Мы — другие!
+                .b-text
+                  p SanCom — это настоящая  телекоммуникационная лаборатория.  
+                  p В ней мы занимаемся настоящей алхимией связи, изобретаем и внедряем оригинальные и новые методы  и сервисы для звонковых центров (колл-центров), ориентированных на результативные продажи. 
+                  a(href='#').btn.btn--primary
+                    span Подробнее о Sancom
+              .about__block
+                img(src='images/Asset2.png' srcset='images/Asset2@2x.png 2x')
+                p Ключевым показателем успеха нашей работы является рост заключённых сделок благодаря безупречной связи. Другими словами, ваш результат — это наш результат. 
+        
+        // METRICS
+        .metrics
+          .container
+            .b-title Соединяем с результатом
+            .metrics__wrapper
+              // item
+              .metrics__item
+                .metrics__item__title ASR выше 60% ACD более 5 мин
+                .metrics__item__text Вырос процент результативных  звонков (ASR) после внедрения решений SanCom 
+              // item
+              .metrics__item
+                .metrics__item__title В течение  3-х часов
+                .metrics__item__text После резкого увеличения тарифов  на Швейцарию менеджеры SanCom подобрали маршрут с необходимыми нам параметрами и ценой
+              // item
+              .metrics__item
+                .metrics__item__title реакция менее  5 минут
+                .metrics__item__text Реакция службы поддержки SanCom обычно менее 5 минут, словно заявками нашей компании занимается персональный инженер
+              // item
+              .metrics__item
+                .metrics__item__title на 15% 
+                .metrics__item__text Вырос процент результативных  звонков (ASR) после внедрения решений SanCom 
+              // item
+              .metrics__item
+                .metrics__item__title передача DTMF отсутствие FAS
+                .metrics__item__text Качество прибалтийских и российских каналов SanCom обеспечено на очень высоком уровне – стабильная передача номера звонящего, прохождение факсов
+              // item
+              .metrics__item
+                .metrics__item__title Менее  <br> 1 часа
+                .metrics__item__text После резкого увеличения тарифов  на Швейцарию менеджеры SanCom подобрали маршрут с необходимыми нам параметрами и ценой
+              // item
+              .metrics__item
+                .metrics__item__title менее  <br> 30 минут
+                .metrics__item__text Заняла вся процедура подключения прямого российского телефонного номера с тестированием
+              // item
+              .metrics__item
+                .metrics__item__title на 15% 
+                .metrics__item__text Удалось снизить количество обрывов  связи во время звонка
+        
+        // FORMULA
+        .formula
+          .container
+            .b-title.b-title--purple Формула эффективной <br> связи от Sancom:
+            .formula__wrapper
+              p Наши лабораторные опыты привели к созданию собственной формулы связи.  <br> Формула эффективной связи от Sancom — это сумма из трёх слагаемых: 
+              .formula__steps
+                .formula__step
+                  .formula__step__num 1
+                  .formula__step__title Резервирование
+                  .formulat__step__text Технологии автоматического резервирования — это золотой стандарт в работе SanCom. Все компоненты и соединения дублируются. При необходимости, резервные ресурсы   активируются автоматически, в течение  30 секунд.
+                .formula__step
+                  .formula__step__num 2
+                  .formula__step__title Предупреждение
+                  .formulat__step__text Мы применяем современные превентивные меры. Это стало возможно благодаря постоянно обучаемой системе мониторинга. Система позволяет отслеживать признаки сбоев и устранять потенциальные проблемы .
+                .formula__step
+                  .formula__step__num 3
+                  .formula__step__title Реакция
+                  .formulat__step__text Мгновенная реакция и обратная связь. Среднее время ответа клиенту на возникшую проблему — 3 минуты. Ответ не должен  задерживаться дольше 15 минут в рабочие часы.
 
-            
-    // PROMO
-    .promo
-      .container
-        .b-title Соединяем с результатом
-        .promo__wrapper
-          .promo__text И делаем это с 2013 года. <br>  Есть один убедительный факт,  <br> которым мы очень дорожим:
-          .promo__cta За 4 года работы от SanCom  не ушёл ни один клиент!
-            
-    // BENEFITS
-    .benefits
-      .container
-        .benefits__slider
-          .benefits__item
-            .benefits__item-content
-              .benefits__item__image
-                img(src='images/sliderPic_1.png' srcset='images/sliderPic_1@2x.png 2x')
-              .benefits__item__content
-                p Увеличение объёмов продаж по результатам проводимых кампаний обзвона на территории Китая, Гонконга и Сингапура на 108 000 долларов, по итогам месяца, благодаря увеличению Answer Seizure ratio на 30%.  
-                p – Крупная CPA сеть
-          // next item
-          .benefits__item
-            .benefits__item-content
-              .benefits__item__image
-                img(src='images/sliderPic_2.png' srcset='images/sliderPic_2@2x.png 2x')
-              .benefits__item__content
-                p Увеличение объёмов продаж по результатам проводимых кампаний обзвона на территории Китая, Гонконга и Сингапура на 108 000 долларов, по итогам месяца, благодаря увеличению Answer Seizure ratio на 30%.  
-                p – Крупная CPA сеть
-          
-    // SERVICES
-    .services
-      .container
-        .services__wrapper
-          .services__content
-            .b-text.b-text--small Наши услуги и решения сотни, а может, и тысячи раз доказали свою надёжность и результативность. Их можно назвать настоящими катализаторами нашей эффективной формулы связи. Вот лишь некоторые из них: 
-            .services__list
-              .services__list-item
-                .services__list-item__name HLR lookups 
-                .services__list-item__description Проверка текущего статуса телефонных номеров, которые необходимо обзвонить.
-              .services__list-item
-                .services__list-item__name Crypto Voice
-                .services__list-item__description Для дорогих и конфиденциальных звонков существует решение по шифрованию данных.
-              .services__list-item
-                .services__list-item__name DID Replacer 
-                .services__list-item__description Номерная база из 50 стран мира и возможность заменить номера в максимально сжатые сроки.
-              .services__list-item
-                .services__list-item__name Predictive Dialers Optimizer 
-              .services__list-item
-                .services__list-item__name Antibot   
-                .services__list-item__description Решение позволяющее определить автоответчикии повысить эффективность дозвона.
-              .services__list-item
-                .services__list-item__name SMSale   
-                .services__list-item__description Решение с широким функционалом для организации sms-рассылок.
+        // PROMO
+        .promo
+          .container
+            .b-title Соединяем с результатом
+            .promo__wrapper
+              .promo__text И делаем это с 2013 года. <br>  Есть один убедительный факт,  <br> которым мы очень дорожим:
+              .promo__cta За 4 года работы от SanCom  не ушёл ни один клиент!
                 
-            a(href='#').btn.btn--primary.btn--white
-              span Подробнее о Sancom
+        // BENEFITS
+        .benefits
+          .container
+            .benefits__slider
+              .benefits__item
+                .benefits__item-content
+                  .benefits__item__image
+                    img(src='images/sliderPic_1.png' srcset='images/sliderPic_1@2x.png 2x')
+                  .benefits__item__content
+                    p Увеличение объёмов продаж по результатам проводимых кампаний обзвона на территории Китая, Гонконга и Сингапура на 108 000 долларов, по итогам месяца, благодаря увеличению Answer Seizure ratio на 30%.  
+                    p – Крупная CPA сеть
+              // next item
+              .benefits__item
+                .benefits__item-content
+                  .benefits__item__image
+                    img(src='images/sliderPic_2.png' srcset='images/sliderPic_2@2x.png 2x')
+                  .benefits__item__content
+                    p Увеличение объёмов продаж по результатам проводимых кампаний обзвона на территории Китая, Гонконга и Сингапура на 108 000 долларов, по итогам месяца, благодаря увеличению Answer Seizure ratio на 30%.  
+                    p – Крупная CPA сеть
+              
+        // SERVICES
+        .services
+          .container
+            .services__wrapper
+              .services__content
+                .b-text.b-text--small Наши услуги и решения сотни, а может, и тысячи раз доказали свою надёжность и результативность. Их можно назвать настоящими катализаторами нашей эффективной формулы связи. Вот лишь некоторые из них: 
+                .services__list
+                  .services__list-item
+                    .services__list-item__name HLR lookups 
+                    .services__list-item__description Проверка текущего статуса телефонных номеров, которые необходимо обзвонить.
+                  .services__list-item
+                    .services__list-item__name Crypto Voice
+                    .services__list-item__description Для дорогих и конфиденциальных звонков существует решение по шифрованию данных.
+                  .services__list-item
+                    .services__list-item__name DID Replacer 
+                    .services__list-item__description Номерная база из 50 стран мира и возможность заменить номера в максимально сжатые сроки.
+                  .services__list-item
+                    .services__list-item__name Predictive Dialers Optimizer 
+                  .services__list-item
+                    .services__list-item__name Antibot   
+                    .services__list-item__description Решение позволяющее определить автоответчикии повысить эффективность дозвона.
+                  .services__list-item
+                    .services__list-item__name SMSale   
+                    .services__list-item__description Решение с широким функционалом для организации sms-рассылок.
+                    
+                a(href='#').btn.btn--primary.btn--white
+                  span Подробнее о Sancom
 
-          .services__image
-            img(src='images/lines_2.png' srcset='images/lines_2@2x.png 2x')
-      
-    // CTA
-    .CTA      
+              .services__image
+                img(src='images/lines_2.png' srcset='images/lines_2@2x.png 2x')
           
-          
-    include shared/footer.pug
+        // CTA
+        .cta
+          .container
+            .cta__wrapper  
+              .b-title.b-title--purple Давайте общаться
+              .cta__form
+                form(action='').js-validateCta
+                  input(type='tel' name='phone' placeholder='+ 7 ___ ')
+                  button(type='submit').btn.btn--primary.btn--white
+                    span Подробнее о sancom
+              .cta__text
+                .cta__text__left
+                  p Наша телекоммуникационная лаборатория может предложить вам попробовать решения и продукты совершенно бесплатно прямо сейчас. 
+
+                  p Достаточно только сделать запрос и мы оперативно свяжемся с вами и договоримся на удобное для вас время.
+                .cta__text__right
+                  p Для технического подключения и начала тестирования требуется менее 60 минут. Следующим шагом, после отличных результатов теста, является подписания договора. Согласование деталей, оформление и подписание базового договора занимает не более двух часов. 
+            
+      include shared/footer.pug
     include shared/scripts.pug
