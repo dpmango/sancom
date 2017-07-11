@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="65px" viewBox="0 0 35 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45 (43475) - http://www.bohemiancoding.com/sketch -->
+    <title>slick-next</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="slider" transform="translate(-1215.000000, -268.000000)" stroke-width="2" stroke="#D8D8D8">
+            <polyline id="slick-next" transform="translate(1216.368358, 300.368358) rotate(-315.000000) translate(-1216.368358, -300.368358) " points="1194.18758 278.187579 1238.54914 278.187579 1238.54914 322.549137"></polyline>
+        </g>
+    </g>
+</svg>

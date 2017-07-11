@@ -91,15 +91,15 @@ $(document).ready(function () {
   // SLIDERS
   //////////
 
-  $('.trending__wrapper').slick({
+  $('.benefits__slider').slick({
     autoplay: true,
-    dots: false,
-    arrows: false,
+    dots: true,
+    arrows: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    centerMode: true,
-    variableWidth: true
+    centerMode: false,
+    variableWidth: false
   });
 
   //////////

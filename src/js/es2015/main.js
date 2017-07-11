@@ -6,7 +6,7 @@ $(document).ready(function(){
 
   const _window = $(window);
   const _document = $(document);
-  
+
   function isRetinaDisplay() {
     if (window.matchMedia) {
         var mq = window.matchMedia("only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen  and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx)");
@@ -91,15 +91,15 @@ $(document).ready(function(){
   // SLIDERS
   //////////
 
-  $('.trending__wrapper').slick({
+  $('.benefits__slider').slick({
     autoplay: true,
-    dots: false,
-    arrows: false,
+    dots: true,
+    arrows: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    centerMode: true,
-    variableWidth: true
+    centerMode: false,
+    variableWidth: false
   });
 
   //////////
