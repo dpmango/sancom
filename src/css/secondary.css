@@ -134,6 +134,13 @@ button:focus {
 .btn--primary span:after {
     background: #39FF4A;
 }
+.btn--white {
+    background: white;
+    color: #1F1F1F;
+}
+.btn--white:hover {
+    color: white;
+}
 .btn:focus, .btn:active {
     outline: none;
 }
