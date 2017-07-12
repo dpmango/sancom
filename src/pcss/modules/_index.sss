@@ -314,13 +314,19 @@
   padding: 80px 0 75px 0
   &__wrapper
     margin: 0 8.6%
+    overflow: hidden
   &__form
+    display: flex
+    align-items: center
     margin-top: 55px
     background: linear-gradient(to left, #39FF4A, #6000FF)
     padding: 55px 60px
     form
       display: flex
       align-items: center
+      transform: translate3d(0,0,0)
+      opacity: 1
+      transition: transform $transitionSpeed $ease, opacity .2s .15s ease
     input
       -webkit-appearance: none
       border: 1px solid white
@@ -338,9 +344,70 @@
       &.has-error
         border-color: tomato
     button
+      flex: 0 0 auto
       margin-left: 40px
       &.no-no
         animation: shake .7s linear
+    &__toggler
+      color: white
+      flex: 0 0 auto
+      font-size: 14px
+      margin-left: 40px
+      font-weight: 500
+      cursor: pointer
+      transition: all $transitionSpeed $ease
+      &:hover
+        color: color(white a(70%))
+        span
+          border-color: transparent
+      span
+        border-bottom: 1px solid white
+        transition: all $transitionSpeed $ease
+    &__contacts
+      flex: 1 1 auto
+      height: .1px
+      width: .1px
+      overflow: hidden
+      min-height: 62px
+      transform: translate3d(100%,0,0)
+      opacity: 0
+      transition: transform $transitionSpeed $ease, opacity .2s .15s ease
+      display: flex
+      justify-content: space-between
+      align-items: center
+      a
+        &:hover
+          .icon
+            &::before
+              color: $colorGreen
+      .icon
+        &::before
+          transition: color $transitionSpeed $ease
+
+      .icon-skype
+        font-size: 44px
+      .icon-telegram
+        font-size: 45px
+      .icon-whatup
+        font-size: 44px
+      .icon-viber
+        font-size: 30px
+      .icon-fb-messenger
+        font-size: 44px
+      .icon-email
+        font-size: 35px
+
+    &.slide
+      form
+        height: .1px
+        width: .1px
+        opacity: 0
+        transform: translate3d(-100%,0,0)
+      .cta__form__contacts
+        height: auto
+        width: auto
+        opacity: 1
+        transform: translate3d(0%,0,0)
   &__text
     margin-top: 30px
     display: flex

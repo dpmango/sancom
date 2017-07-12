@@ -9,7 +9,6 @@
   <!--build:css css/styles.css-->
   <link rel="stylesheet" href="components/normalize-css/normalize.css" type="text/css">
   <link rel="stylesheet" href="components/slick-carousel/slick/slick.css" type="text/css">
-  <link rel="stylesheet" href="components/magnific-popup/dist/magnific-popup.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <!--endbuild-->
   <meta name="description" content=""><!--[if lt IE 9]>
@@ -19,16 +18,15 @@
 <body>
   <div class="page">
     <!-- HEADER::START-->
-    <div class="header">
+    <div class="header header--dark">
       <div class="container">
-        <div class="header__wrapper">
-          <div class="header__logo"><img class="header__logo__white" src="images/logo-white.png" srcset="images/logo-white@2x.png 2x"><img class="header__logo__dark" src="images/logo-black.png" srcset="images/logo-black@2x.png 2x"></div>
+        <div class="header__wrapper"><a class="header__logo" href="homepage.html"><img class="header__logo__white" src="images/logo-white.png" srcset="images/logo-white@2x.png 2x"><img class="header__logo__dark" src="images/logo-black.png" srcset="images/logo-black@2x.png 2x"></a>
           <ul class="header__menu">
-            <li><a href="#">Компания</a></li>
-            <li><a href="#">Кейсы / результаты</a></li>
-            <li><a href="#">Продукты / решения</a></li>
+            <li><a href="about.html">Компания</a></li>
+            <li><a href="cases.html">Кейсы / результаты</a></li>
+            <li><a href="projects.html">Продукты / решения</a></li>
           </ul>
-          <div class="header__cta"><a href="#">Соединяем с результатом</a></div>
+          <div class="header__cta"><a href="#sectionCTA">Соединяем с результатом</a></div>
         </div>
       </div>
     </div>
@@ -50,7 +48,7 @@
         </div>
       </div>
       <!-- CTA-->
-      <div class="cta">
+      <div class="cta" id="sectionCTA">
         <div class="container">
           <div class="cta__wrapper"> 
             <div class="b-title b-title--purple">Давайте общаться</div>
@@ -59,6 +57,8 @@
                 <input type="tel" name="phone" placeholder="+ 7 ___ ">
                 <button class="btn btn--primary btn--white" type="submit"><span>Подробнее о sancom</span></button>
               </form>
+              <div class="cta__form__contacts"><a href="#"><i class="icon icon-skype"></i></a><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-whatup"> </i></a><a href="#"><i class="icon icon-viber"></i></a><a href="#"><i class="icon icon-fb-messenger"></i></a><a href="#"><i class="icon icon-email"></i></a></div>
+              <div class="cta__form__toggler" data-text="Оставить запрос" data-action="to-contacts"><span>Другие способы связи</span></div>
             </div>
             <div class="cta__text">
               <div class="cta__text__left">
@@ -92,12 +92,8 @@
   <!--build:js js/scripts.min.js-->
   <script src="components/jquery/dist/jquery.min.js"></script>
   <script src="components/slick-carousel/slick/slick.min.js"></script>
-  <script src="components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-  <script src="components/air-datepicker/dist/js/datepicker.min.js"></script>
-  <script src="components/air-datepicker/dist/js/i18n/datepicker.en.js"></script>
   <script src="components/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
   <script src="components/jquery-validation/dist/jquery.validate.min.js"></script>
-  <script src="js/libs/jquery.scrollbar.min.js"></script>
   <script src="js/utilities.js"></script>
   <script src="js/validate.js"></script>
   <script src="js/main.js"></script>
