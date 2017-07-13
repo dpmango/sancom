@@ -1569,6 +1569,38 @@ body, html {
 .solutions__card__text a:hover {
     color: #39FF4A;
 }
+.solutions__card__icon {
+    -webkit-flex: 0 0 70px;
+        -ms-flex: 0 0 70px;
+            flex: 0 0 70px;
+    margin-top: 10px;
+    text-align: center;
+    -webkit-box-flex: 0;
+}
+.solutions--cases {
+    padding-top: 60px;
+}
+.solutions--cases .solutions {}
+.solutions--cases .solutions__intro {
+    max-width: 420px;
+}
+.solutions--cases .solutions__card {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.solutions--cases .solutions__card:after {
+    height: 1px;
+    background: rgba(31, 31, 31, 0.3);
+}
+.solutions--cases .solutions__card__left {
+    -webkit-flex-basis: 180px;
+            flex-basis: 180px;
+        -ms-flex-preferred-size: 180px;
+}
+.solutions--cases .solutions__card__right {
+    padding-right: 40px;
+    padding-left: 60px;
+}
 .t-purple {
     color: #6000FF;
 }
@@ -1680,6 +1712,75 @@ body, html {
 .cases-formula__text-col p a:hover {
     border-color: white;
     color: white;
+}
+.cases-text {
+    padding: 70px 0;
+}
+.cases-text__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    margin: 0 8.6%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+}
+.cases-text__col {
+    -webkit-flex: 0 1 50%;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    -webkit-box-flex: 0;
+}
+.cases-text__col p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+.cases-text__col:first-child {
+    padding-right: 20px;
+}
+.cases-text__col:last-child {
+    padding-left: 20px;
+}
+.cases-grow {
+    padding-top: 75px;
+    padding-bottom: 100px;
+    background: #6000FF;
+}
+.cases-grow__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+}
+.cases-grow__metric {
+    -webkit-flex: 0 0 430px;
+        -ms-flex: 0 0 430px;
+            flex: 0 0 430px;
+    color: #39FF4A;
+    font-weight: 900;
+    -webkit-box-flex: 0;
+}
+.cases-grow__metric span {}
+.cases-grow__metric span:first-child {
+    display: block;
+    font-size: 90px;
+}
+.cases-grow__metric span:last-child {
+    font-size: 62px;
+}
+.cases-grow__text {
+    padding-left: 20px;
+    color: white;
+}
+.cases-grow__text p {
+    font-size: 20px;
+    line-height: 1.4;
 }
 @-webkit-keyframes shake {
     from,to {

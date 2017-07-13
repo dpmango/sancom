@@ -15,6 +15,27 @@
     vertical-align: middle;
     font-style: normal;
 }
+.ico-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #39FF4A;
+}
+.ico-rectangle {
+    width: 26px;
+    height: 26px;
+    background: #6000FF;
+    -webkit-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+}
+.ico-triangle {
+    width: 0;
+    height: 0;
+    border-width: 15px 15px 0 15px;
+    border-style: solid;
+    border-color: #39FF4A transparent transparent transparent;
+}
 /* buttons */
 button {
     border: 0;
