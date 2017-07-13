@@ -328,12 +328,14 @@
   &__content
     flex: 1 1 auto
     margin-left: 8.6%
-    margin-right: 12%
+    margin-right: 8%
   &__image
-    flex: 0 1 400px
+    margin-top: 5px
+    flex: 0 0 400px
     img
       max-width: 100%
   &__caption
+    margin-top: 45px
     font-size: 25px
     font-weight: 300
     line-height: 1.6
@@ -342,3 +344,40 @@
     p
       font-size: 14px
       line-height: 1.42
+
+
+.cases-formula
+  background: #1F1F1F
+  color: white
+  padding-top: 60px
+  padding-bottom: 90px
+  &__top
+    display: flex
+    align-items: center
+    &__content
+      flex: 0 1 600px
+      img
+        margin-top: 60px
+        max-width: 100%
+    &__image
+      flex: 0 0 300px
+      margin-left: auto
+      svg, img
+        max-width: 100%
+  &__text
+    margin: 120px -20px 0 -20px
+    display: flex
+    &-col
+      flex: 0 1 33.3%
+      padding: 0 20px
+      p
+        font-size: 14px
+        line-height: 1.42
+        span, a
+          color: $colorGreen
+        a
+          transition: all $transitionSpeed $ease
+          border-bottom: 1px solid $colorGreen
+          &:hover
+            color: white
+            border-color: white

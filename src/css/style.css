@@ -1588,20 +1588,22 @@ body, html {
     -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
-    margin-right: 12%;
+    margin-right: 8%;
     margin-left: 8.6%;
     -webkit-box-flex: 1;
 }
 .cases-head__image {
-    -webkit-flex: 0 1 400px;
-        -ms-flex: 0 1 400px;
-            flex: 0 1 400px;
+    -webkit-flex: 0 0 400px;
+        -ms-flex: 0 0 400px;
+            flex: 0 0 400px;
+    margin-top: 5px;
     -webkit-box-flex: 0;
 }
 .cases-head__image img {
     max-width: 100%;
 }
 .cases-head__caption {
+    margin-top: 45px;
     font-weight: 300;
     font-size: 25px;
     line-height: 1.6;
@@ -1612,6 +1614,72 @@ body, html {
 .cases-head__text p {
     font-size: 14px;
     line-height: 1.42;
+}
+.cases-formula {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    background: #1F1F1F;
+    color: white;
+}
+.cases-formula__top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+}
+.cases-formula__top__content {
+    -webkit-flex: 0 1 600px;
+        -ms-flex: 0 1 600px;
+            flex: 0 1 600px;
+    -webkit-box-flex: 0;
+}
+.cases-formula__top__content img {
+    margin-top: 60px;
+    max-width: 100%;
+}
+.cases-formula__top__image {
+    -webkit-flex: 0 0 300px;
+        -ms-flex: 0 0 300px;
+            flex: 0 0 300px;
+    margin-left: auto;
+    -webkit-box-flex: 0;
+}
+.cases-formula__top__image svg, .cases-formula__top__image img {
+    max-width: 100%;
+}
+.cases-formula__text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 120px -20px 0 -20px;
+}
+.cases-formula__text-col {
+    -webkit-flex: 0 1 33.3%;
+        -ms-flex: 0 1 33.3%;
+            flex: 0 1 33.3%;
+    padding: 0 20px;
+    -webkit-box-flex: 0;
+}
+.cases-formula__text-col p {
+    font-size: 14px;
+    line-height: 1.42;
+}
+.cases-formula__text-col p span, .cases-formula__text-col p a {
+    color: #39FF4A;
+}
+.cases-formula__text-col p a {
+    border-bottom: 1px solid #39FF4A;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.cases-formula__text-col p a:hover {
+    border-color: white;
+    color: white;
 }
 @-webkit-keyframes shake {
     from,to {
