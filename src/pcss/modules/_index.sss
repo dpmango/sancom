@@ -316,11 +316,27 @@
     margin: 0 8.6%
     overflow: hidden
   &__form
+    position: relative
     display: flex
     align-items: center
     margin-top: 55px
     background: linear-gradient(to left, #39FF4A, #6000FF)
     padding: 55px 60px
+    transition: background .3s .2s ease-out
+    &::after
+      display: block
+      content: ' '
+      position: absolute
+      z-index: 1
+      top: 0
+      right: 0
+      bottom: auto
+      width: 300%
+      height: 100%
+      margin: auto
+      transform: translateX(-35%)
+      transition: all .8s 0s ease-out
+      background: linear-gradient(90deg,  color($colorPurple a(100%)) 0%,color($colorGreen a(100%)) 94%,color($colorPurple a(100%)) 100%)
     form
       min-width: 0
       flex: 1 1 auto
@@ -328,7 +344,7 @@
       align-items: center
       transform: translate3d(0,0,0)
       opacity: 1
-      transition: transform $transitionSpeed $ease
+      transition: transform $transitionSpeed .2s $ease, opacity .4s ease
     input
       flex: 0 1 auto
       min-width: 0
@@ -378,7 +394,7 @@
       min-height: 62px
       transform: translate3d(100%,0,0)
       opacity: 0
-      transition: transform $transitionSpeed $ease, opacity .2s .15s ease
+      transition: transform $transitionSpeed .2s $ease, opacity .4s ease
       display: flex
       justify-content: space-between
       align-items: center
@@ -405,6 +421,9 @@
         font-size: 35px
 
     &.slide
+      background: $colorPurple
+      &::after
+        transform: translateX(100%)
       form
         flex: 0 0 0px
         height: .1px
