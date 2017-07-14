@@ -322,6 +322,7 @@
     background: linear-gradient(to left, #39FF4A, #6000FF)
     padding: 55px 60px
     form
+      min-width: 0
       flex: 1 1 auto
       display: flex
       align-items: center
@@ -329,6 +330,8 @@
       opacity: 1
       transition: transform $transitionSpeed $ease, opacity .2s .15s ease
     input
+      flex: 0 1 auto
+      min-width: 0
       -webkit-appearance: none
       border: 1px solid white
       font-size: 30px
@@ -350,6 +353,8 @@
       &.no-no
         animation: shake .7s linear
     &__toggler
+      margin-left: auto
+      min-width: 0
       color: white
       flex: 0 0 auto
       font-size: 14px
@@ -365,7 +370,8 @@
         border-bottom: 1px solid white
         transition: all $transitionSpeed $ease
     &__contacts
-      flex: 1 1 auto
+      min-width: 0
+      flex: 0 0 0px
       height: .1px
       width: .1px
       overflow: hidden
@@ -400,11 +406,13 @@
 
     &.slide
       form
+        flex: 0 0 0px
         height: .1px
         width: .1px
         opacity: 0
         transform: translate3d(-100%,0,0)
       .cta__form__contacts
+        flex: 1 1 auto
         height: auto
         width: auto
         opacity: 1

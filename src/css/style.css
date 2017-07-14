@@ -937,6 +937,7 @@ body, html {
             flex: 1 1 auto;
     -webkit-align-items: center;
             align-items: center;
+    min-width: 0;
     opacity: 1;
     -webkit-transition: opacity .2s .15s ease, -webkit-transform .25s ease-in-out;
     transition: opacity .2s .15s ease, -webkit-transform .25s ease-in-out;
@@ -949,7 +950,11 @@ body, html {
         -ms-flex-align: center;
 }
 .cta__form input {
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
     padding: 0 25px;
+    min-width: 0;
     max-width: 400px;
     border: 1px solid white;
     background: transparent;
@@ -958,6 +963,7 @@ body, html {
     line-height: 58px;
     -webkit-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
+    -webkit-box-flex: 0;
     -webkit-appearance: none;
 }
 .cta__form input::-webkit-input-placeholder {
@@ -993,7 +999,9 @@ body, html {
     -webkit-flex: 0 0 auto;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
+    margin-left: auto;
     margin-left: 40px;
+    min-width: 0;
     color: white;
     font-weight: 500;
     font-size: 14px;
@@ -1018,14 +1026,15 @@ body, html {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -webkit-flex: 0 0 0px;
+        -ms-flex: 0 0 0px;
+            flex: 0 0 0%;
     -webkit-align-items: center;
             align-items: center;
     -webkit-justify-content: space-between;
             justify-content: space-between;
     overflow: hidden;
+    min-width: 0;
     min-height: 62px;
     width: .1px;
     height: .1px;
@@ -1036,7 +1045,7 @@ body, html {
     transition: transform .25s ease-in-out, opacity .2s .15s ease, -webkit-transform .25s ease-in-out;
     -webkit-transform: translate3d(100%,0,0);
             transform: translate3d(100%,0,0);
-    -webkit-box-flex: 1;
+    -webkit-box-flex: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
     -webkit-box-align: center;
@@ -1071,18 +1080,26 @@ body, html {
     font-size: 35px;
 }
 .cta__form.slide form {
+    -webkit-flex: 0 0 0px;
+        -ms-flex: 0 0 0px;
+            flex: 0 0 0%;
     width: .1px;
     height: .1px;
     opacity: 0;
     -webkit-transform: translate3d(-100%,0,0);
             transform: translate3d(-100%,0,0);
+    -webkit-box-flex: 0;
 }
 .cta__form.slide .cta__form__contacts {
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
     width: auto;
     height: auto;
     opacity: 1;
     -webkit-transform: translate3d(0%,0,0);
             transform: translate3d(0%,0,0);
+    -webkit-box-flex: 1;
 }
 .cta__text {
     display: -webkit-box;
