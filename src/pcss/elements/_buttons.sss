@@ -15,35 +15,45 @@ button
   span
     position: relative
     z-index: 2
+  &::after
+    display: block
+    content: ' '
+    position: absolute
+    z-index: 1
+    top: 0
+    right: 0
+    bottom: auto
+    width: 300%
+    height: 100%
+    margin: auto
+    transform: translateX(-35%)
+  &:hover, &:focus
     &::after
-      display: block
-      content: ' '
-      position: absolute
-      z-index: -1
-      top: 50%
-      left: 50%
-      size: 50px
-      transform: translate(-50%, -50%) scale(0)
-      transition: all $transitionSpeed linear
-  &:hover
-    span
-      &::after
-        transform: translate(-50%, -50%) scale(5)
+      transition: all .8s 0s ease-out
+      transform: translateX(100%)
   &--primary
-    padding: 23px 35px
+    padding: 21px 35px
     font-size: 12px
     letter-spacing: .22px
     text-transform: uppercase
     color: white
     font-weight: 500
+    border: 2px solid transparent
     background: $colorPurple
-    span
-      &::after
-        background: $colorGreen
+    transition: border .3s .15s ease-out
+    &:hover
+      border-color: $colorGreen
+    &::after
+      background: linear-gradient(90deg,  color($colorPurple a(100%)) 0%,color($colorGreen a(100%)) 94%,color($colorPurple a(100%)) 100%)
   &--white
     background: white
     color: $fontColor
+    transition: background .3s .15s ease-out
+    &::after
+      background: linear-gradient(90deg,  color($colorGreen a(100%)) 0%,color($colorPurple a(100%)) 94%,color($colorGreen a(100%)) 100%)
     &:hover
+      border-color: white
+      background: $colorGreen
       color: white
   &:focus, &:active
     outline: none

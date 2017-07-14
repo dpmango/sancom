@@ -31,7 +31,7 @@ $(document).ready(function () {
   $('a[href^="#section"]').click(function () {
     var el = $(this).attr('href');
     $('body, html').animate({
-      scrollTop: $(el).offset().top - 90 }, 1000);
+      scrollTop: $(el).offset().top }, 1000);
     return false;
   });
 
