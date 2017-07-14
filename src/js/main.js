@@ -29,10 +29,23 @@ $(document).ready(function () {
 
   // Smoth scroll
   $('a[href^="#section"]').click(function () {
+    var offset = $(this).data('offset') || 90;
     var el = $(this).attr('href');
     $('body, html').animate({
-      scrollTop: $(el).offset().top }, 1000);
+      scrollTop: $(el).offset().top - offset }, 1000);
     return false;
+  });
+
+  // hamburger
+  $('.hamburger').on('click', function () {
+    $(this).toggleClass('is-active');
+    $('.mobile-menu').toggleClass('active');
+  });
+
+  // close on a click
+  $('.mobile-menu__content a').on('click', function () {
+    $('.hamburger').removeClass('is-active');
+    $('.mobile-menu').removeClass('active');
   });
 
   // HEADER SCROLL

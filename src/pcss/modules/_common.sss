@@ -14,16 +14,19 @@
     display: flex
     align-items: center
   &__logo
+    min-width: 0
     flex: 0 0 230px
-    &__dark
-      display: none
+    img, svg
+      max-width: 100%
+    #letters
+      fill: white
   &__menu
     flex: 0 1 auto
     margin-left: auto
     margin-right: auto
     font-weight: 500
     margin: 0
-    padding: 0 50px 0 0
+    padding: 0 20px 0 40px
     li
       display: inline-block
       &.active
@@ -52,7 +55,13 @@
       margin-right: -15px
     &:hover
       color: white
-
+  &__hamburger
+    opacity: 0
+    width: 1px
+    margin-left: 0px
+    flex: 0 0 0px
+    transform: translate3d(100%,0,0)
+    transition: transform $transitionSpeed ease-in
   &--transformed
     position: fixed
     opacity: 0
@@ -63,26 +72,150 @@
     transform: translate3d(0, -80px, 0)
     transition: transform $transitionSpeed $ease
     .header__logo
-      &__white
-        display: none
-      &__dark
-        display: block
+      #letters
+        fill: black
+    .hamburger-inner
+      background-color: black
+      &::before, &::after
+        background-color: black
+    .header__cta
+      &:hover
+        color: $colorPurple
   &--fixed
     opacity: 1
     transform: translate3d(0, 0px, 0)
-    .header__cta
-      &:hover
-        color: $colorPurple
   &--dark
     color: $fontColor
     .header__logo
-      &__white
-        display: none
-      &__dark
-        display: block
+      #letters
+        fill: black
     .header__cta
       &:hover
         color: $colorPurple
+    .hamburger-inner
+      background-color: black
+      &::before, &::after
+        background-color: black
+
+@media($desktop)
+  .header
+    &__menu
+      li
+        span
+          display: none
+
+@media($tablet)
+  .header
+    &__menu
+      display: none
+    &__hamburger
+      margin-left: 20px
+      width: auto
+      transform: translate3d(0,0,0)
+      opacity: 1
+
+@media($mobile)
+  .header
+    padding: 20px 0
+    &__logo
+      flex: 0 0 180px
+
+@media(width <= 480px)
+  .header
+    &__cta
+      display: none
+    &__hamburger
+      margin-left: auto
+
+
+// MOBILE MENU
+.mobile-menu
+  display: none
+  position: fixed
+  top: 110px
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 8
+  transform: translate3d(-100%,0,0)
+  opacity: 0
+  pointer-events: none
+  transition: transform .3s ease-in
+  &__wrapper
+    display: flex
+    flex-direction: column
+    overflow-y: scroll
+    position: relative
+    padding: 50px 25px
+    text-align: center
+    min-height: calc(100vh - 120px)
+    background: $colorPurple
+    color: white
+    &::after
+      display: block
+      content: ' '
+      position: absolute
+      z-index: 1
+      top: 0
+      right: 0
+      bottom: auto
+      width: 300%
+      height: 100%
+      margin: auto
+      transform: translateX(-35%)
+      background: linear-gradient(90deg,  color($colorPurple a(100%)) 0%,color($colorGreen a(100%)) 94%,color($colorPurple a(100%)) 100%)
+  &__content
+    display: flex
+    flex-direction: column
+    flex: 1 1 auto
+    opacity: 0
+    transition: all $transitionSpeed .8s ease-out
+    transform: translate3d(0,100%,0)
+  &__list
+    margin: 0
+    padding: 0
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: column
+    li
+      font-weight: 500
+      flex: 0 0 auto
+      font-size: 20px
+      a
+        display: inline-block
+        padding: 15px
+        transition: all $transitionSpeed $ease
+        &:hover
+          color: $colorGreen
+  &__cta
+    margin-top: auto
+    flex: 0 0 auto
+    font-weight: 500
+    font-size: 15px
+    text-transform: uppercase
+    color: $colorGreen
+    transition: all $transitionSpeed $ease
+    a
+      padding: 15px
+    &:hover
+      color: white
+  &.active
+    opacity: 1
+    transform: translate3d(0,0,0)
+    pointer-events: all
+    .mobile-menu__wrapper
+      &::after
+        transition: all .8s .1s ease-out
+        transform: translateX(100%)
+    .mobile-menu__content
+      opacity: 1
+      transform: translate3d(0,0,0)
+
+@media($tablet)
+  .mobile-menu
+    display: block
+
 
 // FOOTER
 .footer
