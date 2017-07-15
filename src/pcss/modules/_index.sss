@@ -527,13 +527,16 @@
     flex: 0 1 auto
     padding-right: 20px
   &__image
+    position: relative
     flex: 0 0 206px
     padding-left: 20px
     text-align: right
-    margin-top: -210px
     img
+      position: absolute
+      right: 0
+      top: 150px
       max-width: 100%
-      transition: all .1s $ease
+      transition: transform .1s ease
   &__list
     margin-top: 80px
     margin-bottom: 30px

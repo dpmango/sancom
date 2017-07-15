@@ -149,12 +149,15 @@ $(document).ready(function () {
       var depth = $('.hero__image').data('depth');
       var HeroContainerHeight = $('.hero').height();
 
+      // hero lines
       if (wScroll <= HeroContainerHeight) {
         $('.hero__image img').css('transform', 'translate3d(0,-' + wScroll / depth + 'px,0)');
       }
 
-      if (wScroll >= $('.services__image').offset().top - _window.height()) {
-        $('.services__image img').css('transform', 'translate3d(0,-' + (wScroll - $('.services__image').offset().top) + 'px,0)');
+      // service lines
+      var serviceBlockOffset = $('.services').offset().top;
+      if (wScroll + _window.height() > serviceBlockOffset && serviceBlockOffset + $('.services').height() > wScroll) {
+        $('.services__image img').css('transform', 'translate3d(0,-' + (wScroll - serviceBlockOffset + $('.services').height()) / $('.services__image').data('depth') + 'px,0)');
       }
     });
   }

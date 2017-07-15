@@ -1732,18 +1732,23 @@ button:focus {
     -webkit-box-flex: 0;
 }
 .services__image {
+    position: relative;
     -webkit-flex: 0 0 206px;
         -ms-flex: 0 0 206px;
             flex: 0 0 206px;
-    margin-top: -210px;
     padding-left: 20px;
     text-align: right;
     -webkit-box-flex: 0;
 }
 .services__image img {
+    position: absolute;
+    top: 150px;
+    right: 0;
     max-width: 100%;
-    -webkit-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
+    -webkit-transition: -webkit-transform .1s ease;
+    transition: -webkit-transform .1s ease;
+    transition: transform .1s ease;
+    transition: transform .1s ease, -webkit-transform .1s ease;
 }
 .services__list {
     display: -webkit-box;
