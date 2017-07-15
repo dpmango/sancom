@@ -955,8 +955,84 @@ button:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
 }
-.footer__developer span {
+.footer__developer > span {
     margin-right: 14px;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.footer__developer:hover {
+    color: #39FF4A;
+}
+@media(max-width: 960px) {
+    .footer {
+        padding: 35px 0;
+    }
+    .footer__contacts {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-left: 30px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+    }
+    .footer__contacts span {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    .footer__contacts span:last-child {
+        margin-bottom: 0;
+    }
+}
+@media(max-width: 785px) {
+    .footer {}
+    .footer__developer {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+    }
+    .footer__developer > span {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .footer__developer > span span {
+        display: none;
+    }
+}
+@media(max-width: 568px) {
+    .footer {}
+    .footer__wrapper {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-align-items: flex-start;
+                align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+    }
+    .footer__logo {
+        -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+        -webkit-box-flex: 0;
+    }
+    .footer__contacts {
+        -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+        margin: 20px 0 40px 0;
+        -webkit-box-flex: 0;
+    }
+    .footer__developer {
+        -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+        margin-left: 0;
+        -webkit-box-flex: 0;
+    }
 }
 /* INDEX PAGE */
 .hero {

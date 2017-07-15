@@ -259,5 +259,44 @@
     margin-left: auto
     font-size: 12px
     display: flex
-    span
+    > span
       margin-right: 14px
+      transition: all $transitionSpeed $ease
+    &:hover
+      color: $colorGreen
+
+@media($desktop)
+  .footer
+    padding: 35px 0
+    &__contacts
+      flex-direction: column
+      margin-left: 30px
+      span
+        margin-left: 0
+        margin-bottom: 10px
+        &:last-child
+          margin-bottom: 0
+
+@media($tablet)
+  .footer
+    &__developer
+      flex-direction: column
+      > span
+        margin-right: 0
+        margin-bottom: 10px
+        span
+          display: none
+
+@media($mobile)
+  .footer
+    &__wrapper
+      flex-direction: column
+      align-items: flex-start
+    &__logo
+      flex: 0 0 auto
+    &__contacts
+      flex: 0 0 auto
+      margin: 20px 0 40px 0
+    &__developer
+      flex: 0 0 auto
+      margin-left: 0
