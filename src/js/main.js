@@ -38,7 +38,8 @@ $(document).ready(function () {
 
   // Smoth scroll
   $('a[href^="#section"]').click(function () {
-    var offset = $(this).data('offset') || 90;
+    // var offset = $(this).data('offset');
+    var offset = 90;
     var el = $(this).attr('href');
     $('body, html').animate({
       scrollTop: $(el).offset().top - offset }, 1000);

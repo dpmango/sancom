@@ -56,13 +56,27 @@ body, html
 .simpleFadeIn
   animation-name: simpleFadeIn
 
+.simpleFadeRight
+  animation-name: simpleFadeRight
+
 .fadeInUp
   animation-name: fadeInUp
+
+.fadeInRight
+  animation-name: fadeInRight
 
 @keyframes simpleFadeIn
   from
     opacity: 0
     transform: translate3d(0, 50px, 0)
+  todo
+    opacity: 1
+    transform: none
+
+@keyframes simpleFadeRight
+  from
+    opacity: 0
+    transform: translate3d(50vw, 35px, 0)
   todo
     opacity: 1
     transform: none
