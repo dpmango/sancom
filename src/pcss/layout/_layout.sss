@@ -45,3 +45,24 @@ body, html
   flex-direction: column
   &__content
     flex: 1 0 auto
+
+
+.animated
+  animation-duration: 1s
+  animation-fill-mode: both
+  &.infinite
+    animation-iteration-count: infinite
+
+.simpleFadeIn
+  animation-name: simpleFadeIn
+
+.fadeInUp
+  animation-name: fadeInUp
+
+@keyframes simpleFadeIn
+  from
+    opacity: 0
+    transform: translate3d(0, 50px, 0)
+  todo
+    opacity: 1
+    transform: none

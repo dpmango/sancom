@@ -18,8 +18,12 @@
     flex: 0 0 230px
     img, svg
       max-width: 100%
+      overflow: visible
     #letters
       fill: white
+    &:hover
+      #blocks
+        animation: tada 1s ease
   &__menu
     flex: 0 1 auto
     margin-left: auto

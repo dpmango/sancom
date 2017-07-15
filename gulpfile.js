@@ -24,8 +24,6 @@ var vmin          = require('postcss-vmin');
 var will_change   = require('postcss-will-change');
 var flexbugs      = require('postcss-flexbugs-fixes');
 var cssnano       = require('cssnano');
-var sass          = require('gulp-sass');
-var sassGlob      = require('gulp-sass-glob');
 var useref        = require('gulp-useref');
 var uglify        = require('gulp-uglify');
 var gulpIf        = require('gulp-if');
@@ -50,12 +48,9 @@ gulp.task('default', function (callback) {
 
 // Watch
 gulp.task('watch', function(){
-  // uncomment to use with sass
-  //gulp.watch('./src/sass/**/*.+(scss|sass)', ['sass']);
   gulp.watch('./src/pcss/**/*.+(sss|css)', ['postcss']);
   gulp.watch('./src/views/**/*.pug', ['pug-watch']);
   gulp.watch('./src/js/es2015/*.js', ['babel']);
-  gulp.watch('src/images/svg/*.svg', {cwd:'./'}, ['iconfont']);
   gulp.watch('./src/js/**/*.js', browserSync.reload);
 })
 

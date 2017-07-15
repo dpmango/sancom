@@ -6,11 +6,8 @@
     position: relative
     min-height: 100vh
     max-height: 900px
-    padding-top: 200px
-    padding-bottom: 75px
+    padding-top: 130px
     display: flex
-    flex-direction: column
-    justify-content: space-between
     .b-title
       &:hover
         span
@@ -19,10 +16,23 @@
             bottom: 0
           &::after
             animation: pulse 1s infinite ease
+  &__content
+    padding-top: 70px
+    padding-bottom: 75px
+    flex: 1 1 auto
+    display: flex
+    flex-direction: column
+    justify-content: space-between
   &__image
-    position: absolute
-    right: 0
-    top: 130px
+    position: relative
+    flex: 0 0 200px
+    margin-left: 30px
+    img
+      position: absolute
+      top: 200px
+      right: 0
+      max-width: 100%
+      transition: transform .1s ease
 
 // ABOUT
 .about

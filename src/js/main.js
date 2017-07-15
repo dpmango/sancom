@@ -17,6 +17,15 @@ $(document).ready(function () {
   }
   // isRetinaDisplay()
 
+  var mobileDevice = isMobile();
+  // detect mobile devices
+  function isMobile() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
   //////////
   // COMMON
@@ -121,4 +130,27 @@ $(document).ready(function () {
   });
 
   $("input[type='tel']").mask("+7 (000) 000-0000", { placeholder: "+7 (___) ___-____" });
+
+  // reveal scroll animations - wow
+  var wow = new WOW({
+    boxClass: 'wow', // default
+    animateClass: 'animated', // default
+    offset: 0, // default
+    mobile: false, // default
+    live: false // default
+  });
+  wow.init();
+
+  // PARALLAX
+  if (mobileDevice == false) {
+    _window.scrolled(10, function () {
+      var wScroll = _window.scrollTop();
+      var depth = $('.hero__image').data('depth');
+      var HeroContainerHeight = $('.hero').height();
+
+      if (wScroll <= HeroContainerHeight) {
+        $('.hero__image img').css('transform', 'translate3d(0,-' + wScroll / depth + 'px,0)');
+      }
+    });
+  }
 });
