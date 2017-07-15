@@ -152,6 +152,10 @@ $(document).ready(function () {
       if (wScroll <= HeroContainerHeight) {
         $('.hero__image img').css('transform', 'translate3d(0,-' + wScroll / depth + 'px,0)');
       }
+
+      if (wScroll >= $('.services__image').offset().top - _window.height()) {
+        $('.services__image img').css('transform', 'translate3d(0,-' + (wScroll - $('.services__image').offset().top) + 'px,0)');
+      }
     });
   }
 });

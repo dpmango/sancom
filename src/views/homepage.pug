@@ -99,10 +99,10 @@ doctype html
         // PROMO
         .promo
           .container
-            .b-title Соединяем с результатом
-            .promo__wrapper
+            .b-title.wow.simpleFadeIn  Соединяем с результатом
+            .promo__wrapper.wow.simpleFadeIn(data-wow-delay='.2s')
               .promo__text И делаем это с 2013 года. <br>  Есть один убедительный факт,  <br> которым мы очень дорожим:
-              .promo__cta За 4 года работы от SanCom  не ушёл ни один клиент!
+              .b-ext-text За 4 года работы от SanCom  не ушёл ни один клиент!
                 
         // BENEFITS
         .benefits
@@ -110,17 +110,17 @@ doctype html
             .benefits__slider
               .benefits__item
                 .benefits__item-content
-                  .benefits__item__image
+                  .benefits__item__image.wow.simpleFadeIn
                     img(src='images/sliderPic_1.png' srcset='images/sliderPic_1@2x.png 2x')
-                  .benefits__item__content
+                  .benefits__item__content.wow.simpleFadeIn(data-wow-delay='.3s')
                     p Увеличение объёмов продаж по результатам проводимых кампаний обзвона на территории Китая, Гонконга и Сингапура на 108 000 долларов, по итогам месяца, благодаря увеличению Answer Seizure ratio на 30%.  
                     p – Крупная CPA сеть
               // next item
               .benefits__item
                 .benefits__item-content
-                  .benefits__item__image
+                  .benefits__item__image.wow.simpleFadeIn
                     img(src='images/sliderPic_2.png' srcset='images/sliderPic_2@2x.png 2x')
-                  .benefits__item__content
+                  .benefits__item__content.wow.simpleFadeIn(data-wow-delay='.3s')
                     p Увеличение объёмов продаж по результатам проводимых кампаний обзвона на территории Китая, Гонконга и Сингапура на 108 000 долларов, по итогам месяца, благодаря увеличению Answer Seizure ratio на 30%.  
                     p – Крупная CPA сеть
               
@@ -129,30 +129,30 @@ doctype html
           .container
             .services__wrapper
               .services__content
-                .b-text.b-text--small Наши услуги и решения сотни, а может, и тысячи раз доказали свою надёжность и результативность. Их можно назвать настоящими катализаторами нашей эффективной формулы связи. Вот лишь некоторые из них: 
+                .b-text.b-text--small.wow.simpleFadeIn(data-wow-delay='.3s') Наши услуги и решения сотни, а может, и тысячи раз доказали свою надёжность и результативность. Их можно назвать настоящими катализаторами нашей эффективной формулы связи. Вот лишь некоторые из них: 
                 .services__list
-                  .services__list-item
+                  .services__list-item.wow.simpleFadeRight(data-wow-delay='.5s')
                     .services__list-item__name HLR lookups 
                     .services__list-item__description Проверка текущего статуса телефонных номеров, которые необходимо обзвонить.
-                  .services__list-item
+                  .services__list-item.wow.simpleFadeRight(data-wow-delay='.7s')
                     .services__list-item__name Crypto Voice
                     .services__list-item__description Для дорогих и конфиденциальных звонков существует решение по шифрованию данных.
-                  .services__list-item
+                  .services__list-item.wow.simpleFadeRight(data-wow-delay='.9s')
                     .services__list-item__name DID Replacer 
                     .services__list-item__description Номерная база из 50 стран мира и возможность заменить номера в максимально сжатые сроки.
-                  .services__list-item
+                  .services__list-item.wow.simpleFadeRight(data-wow-delay='.5s')
                     .services__list-item__name Predictive Dialers Optimizer 
-                  .services__list-item
+                  .services__list-item.wow.simpleFadeRight(data-wow-delay='.7s')
                     .services__list-item__name Antibot   
                     .services__list-item__description Решение позволяющее определить автоответчикии повысить эффективность дозвона.
-                  .services__list-item
+                  .services__list-item.wow.simpleFadeRight(data-wow-delay='.9s')
                     .services__list-item__name SMSale   
                     .services__list-item__description Решение с широким функционалом для организации sms-рассылок.
                     
-                a(href='#').btn.btn--primary.btn--white
+                a(href='#').btn.btn--primary.btn--white.wow.simpleFadeIn(data-wow-delay='1.5s')
                   span Подробнее о Sancom
 
-              .services__image
+              .services__image.wow.simpleFadeIn.wow.simpleFadeRight(data-depth='3')
                 img(src='images/lines_2.png' srcset='images/lines_2@2x.png 2x')
           
         include shared/cta.pug
