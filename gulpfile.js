@@ -28,10 +28,6 @@ var useref        = require('gulp-useref');
 var uglify        = require('gulp-uglify');
 var gulpIf        = require('gulp-if');
 var imagemin      = require('gulp-imagemin');
-var iconfont      = require('gulp-iconfont');
-var svgmin        = require('gulp-svgmin');
-var consolidate   = require('gulp-consolidate');
-var runTimestamp  = Math.round(Date.now()/1000);
 var cache         = require('gulp-cache');
 var del           = require('del');
 var runSequence   = require('run-sequence');
@@ -125,62 +121,6 @@ gulp.task('babel', function() {
       .pipe(browserSync.reload({
         stream: true
       }));
-});
-
-// minify svg
-gulp.task('svg-min', function () {
-  return gulp.src(['./src/images/svg/*.svg'])
-    .pipe(svgmin({
-        plugins: [{
-            removeDoctype: false
-        }, {
-            removeComments: false
-        }, {
-            cleanupNumericValues: {
-                floatPrecision: 2
-            }
-        }, {
-            convertColors: {
-                names2hex: false,
-                rgb2hex: false
-            }
-        }]
-    }))
-    .pipe(gulp.dest('./src/images/svg/min'));
-});
-
-// generate iconfont
-gulp.task('iconfont', function(done){
-  var iconStream = gulp.src(['./src/images/svg/min/*.svg'])
-      .pipe(iconfont({
-        fontName: 'IconFont',
-        prependUnicode: false,
-        normalize: true,
-        fontHeight: 1001,
-        formats: ['ttf', 'eot', 'woff', 'svg'],
-        timestamp: runTimestamp, // recommended to get consistent builds when watching files
-      }))
-
-  async.parallel([
-    function handleGlyphs (cb) {
-      iconStream.on('glyphs', function(glyphs, options) {
-        gulp.src('./src/pcss/tpl/_iconfont.sss')
-          .pipe(consolidate('lodash', {
-            glyphs: glyphs,
-            fontName: 'IconFont',
-            fontPath: '../fonts/',
-            className: 'icon'
-          }))
-          .pipe(gulp.dest('./src/pcss/elements'))
-          .on('finish', cb);
-      });
-    },
-    function handleFonts (cb) {
-      iconStream
-        .pipe(gulp.dest('./src/fonts/'))
-        .on('finish', cb);
-    }
-  ], done);
 });
 
 
