@@ -139,7 +139,7 @@
 .mobile-menu
   display: none
   position: fixed
-  top: 110px
+  top: 150px
   right: 0
   bottom: 0
   left: 0
@@ -155,7 +155,7 @@
     position: relative
     padding: 50px 25px
     text-align: center
-    min-height: calc(100vh - 120px)
+    min-height: calc(100vh - 150px)
     background: $colorPurple
     color: white
     &::after
@@ -218,11 +218,24 @@
     .mobile-menu__content
       opacity: 1
       transform: translate3d(0,0,0)
+  &--scrolled
+    top: 100px
+    .mobile-menu__wrapper
+      min-height: calc(100vh - 100px)
 
 @media($tablet)
   .mobile-menu
     display: block
 
+@media($mobile)
+  .mobile-menu
+    top: 110px
+    &__wrapper
+      min-height: calc(100vh - 110px)
+    &--scrolled
+      top: 80px
+      .mobile-menu__wrapper
+        min-height: calc(100vh - 80px)
 
 // FOOTER
 .footer

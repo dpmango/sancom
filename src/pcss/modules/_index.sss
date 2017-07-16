@@ -201,6 +201,8 @@
   .b-text
     margin-left: 20px
     font-size: 18px
+    &--small
+      font-size: 18px
   .b-ext-text
     font-size: 28px
   .b-title
@@ -212,6 +214,10 @@
         size: 44px 28px
 
 @media($mobile)
+  .b-text
+    &--small
+      font-size: 16px
+
   .b-ext-text
     font-size: 24px
   .b-title
@@ -382,6 +388,13 @@
         .formula__step__num
           margin-left: 0
 
+@media($mobile)
+  .formula
+    &__wrapper
+      margin-left: 0
+    &__step
+      margin-right: 0
+
 // PROMO
 .promo
   background: $colorPurple
@@ -455,6 +468,17 @@
         flex: 0 0 auto
         padding-bottom: 20px
 
+@media($mobile)
+  .benefits
+    padding-top: 50px
+    &__item
+      &-content
+        margin: 0
+      &__content
+        font-size: 16px
+        padding-left: 20px
+        padding-right: 20px
+        margin-top: 10px
 
 
 .slick-arrow
@@ -479,6 +503,10 @@
 .slick-prev
   left: 0
   background-image: url('../images/svg/slick-prev.svg')
+
+@media($mobile)
+  .slick-arrow
+    display: none
 
 .slick-dots
   margin-left: 56.5%
@@ -524,10 +552,13 @@
     display: flex
     align-items: flex-start
   &__content
+    position: relative
+    z-index: 2
     flex: 0 1 auto
     padding-right: 20px
   &__image
     position: relative
+    z-index: 1
     flex: 0 0 206px
     padding-left: 20px
     text-align: right
@@ -559,6 +590,49 @@
         line-height: 1.42
         margin-top: 20px
 
+@media($desktop)
+  .services
+    padding-bottom: 80px
+    &__list
+      &-item
+        flex: 0 1 50%
+
+@media($tablet)
+  .services
+    &__list
+      margin-top: 60px
+      &-item
+        margin-bottom: 50px
+        &__name
+          font-size: 30px
+    &__image
+      flex: 0 0 150px
+      img
+        top: 700px
+
+@media($mobile)
+  .services
+    position: relative
+    &__list
+      &-item
+        &__name
+          font-size: 26px
+    &__image
+      position: absolute
+      top: 350px
+      right: 0
+      img
+        position: static
+        max-width: 150px
+
+
+@media(width <= 480px)
+  .services
+    &__list
+      margin-top: 40px
+      &-item
+        flex: 0 1 100%
+        margin-bottom: 35px
 
 // CTA
 .cta

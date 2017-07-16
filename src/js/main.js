@@ -50,13 +50,32 @@ $(document).ready(function () {
   $('.hamburger').on('click', function () {
     $(this).toggleClass('is-active');
     $('.mobile-menu').toggleClass('active');
+    stopScroll();
   });
 
   // close on a click
   $('.mobile-menu__content a').on('click', function () {
     $('.hamburger').removeClass('is-active');
     $('.mobile-menu').removeClass('active');
+    stopScroll();
   });
+
+  function stopScroll() {
+    if ($('.hamburger').is('.is-active')) {
+      $('body').on('touchmove', function (e) {
+        e.preventDefault();
+      });
+      $('body').on({ 'mousewheel': function mousewheel(e) {
+          if (e.target.id == 'el') return;
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      });
+    } else {
+      $('body').unbind("mousewheel");
+      $('body').off("touchmove");
+    }
+  }
 
   // HEADER SCROLL
   // add .header-static for .page or body
@@ -77,8 +96,10 @@ $(document).ready(function () {
 
       if (vScroll > heroHeight) {
         header.addClass('header--fixed');
+        $('.mobile-menu').addClass('mobile-menu--scrolled');
       } else {
         header.removeClass('header--fixed');
+        $('.mobile-menu').removeClass('mobile-menu--scrolled');
       }
     });
   }

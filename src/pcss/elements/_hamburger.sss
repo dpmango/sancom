@@ -57,6 +57,8 @@
     &::before, &::after
       transition: bottom 0.08s 0s ease-out, top 0.08s 0s ease-out, transform .3s ease, opacity 0s linear
   &.is-active .hamburger-inner
+    transition: background .2s .15s ease-in
+    background-color: tomato
     &::before, &::after
       opacity: 0
       transition: bottom 0.08s ease-out, top 0.08s ease-out, opacity 0s 0.08s linear
