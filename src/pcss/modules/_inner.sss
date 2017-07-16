@@ -553,6 +553,17 @@
       &__right
         margin-top: 15px
         padding-left: 0
+    &--cases
+      .solutions
+        &__card
+          &__left
+            flex: 0 0 auto
+          &__right
+            padding-left: 0
+            margin-top: 15px
+            padding-right: 5%
+          &__icon
+            display: none
 
 @media($mobile)
   .solutions
@@ -565,7 +576,11 @@
     &__card
       &__name
         font-size: 28px
-
+    &--cases
+      .solutions
+        &__card
+          &__right
+            padding-right: 0
 
 
 // CASES
@@ -573,8 +588,6 @@
   padding-top: 250px
   padding-bottom: 70px
   &__wrapper
-    display: -webkit-flex
-    display: -ms-flex
     display: flex
   &__content
     flex: 1 1 auto
@@ -596,6 +609,53 @@
       font-size: 14px
       line-height: 1.42
 
+@media($desktop)
+  .cases-head
+    padding-top: 200px
+    &__caption
+      font-size: 22px
+    &__content
+      margin-left: 20px
+      margin-right: 5%
+
+@media($tablet)
+  .cases-head
+    padding-top: 180px
+    &__wrapper
+      flex-direction: column
+    &__content
+      flex: 0 0 auto
+      margin-right: 20px
+    &__text
+      margin-top: 25px
+    &__image
+      flex: 0 0 auto
+      margin-left: 20px
+      margin-top: 20px
+      text-align: center
+    &__caption
+      font-size: 18px
+      margin-top: 30px
+
+@media($mobile)
+  .cases-head
+    padding-top: 150px
+    &__content
+      margin-right: 0
+      margin-left: 0
+
+@media($mobile-s)
+  .cases-head
+    padding-bottom: 0
+    &__image
+      margin-left: -20px
+      margin-right: -20px
+      font-size: 0
+      margin-bottom: -1px
+      img
+        width: 100%
+
+
 
 .cases-formula
   background: #1F1F1F
@@ -607,6 +667,7 @@
     align-items: center
     &__content
       flex: 0 1 600px
+      margin-right: 20px
       img
         margin-top: 60px
         max-width: 100%
@@ -633,6 +694,32 @@
             color: white
             border-color: white
 
+@media($desktop)
+  .cases-formula
+    padding-bottom: 70px
+    &__top
+      &__image
+        flex: 0 0 250px
+    &__text
+      margin-top: 100px
+
+@media($tablet)
+  .cases-formula
+    padding-top: 60px
+    &__top
+      &__image
+        display: none
+    &__text
+      flex-wrap: wrap
+      margin-top: 60px
+      &-col
+        flex: 0 1 50%
+
+@media($mobile)
+  .cases-formula
+    &__text
+      &-col
+        flex: 0 1 100%
 
 .cases-text
   padding: 70px 0
@@ -649,6 +736,33 @@
     p
       font-size: 20px
       line-height: 1.4
+
+@media($desktop)
+  .cases-text
+    &__wrapper
+      margin: 0 20px
+
+@media($tablet)
+  .cases-text
+    padding: 60px 0
+    &__wrapper
+      flex-direction: column
+    &__col
+      flex: 0 0 auto
+      &:first-child
+        padding-right: 0px
+      &:last-child
+        padding-left: 0px
+      p
+        font-size: 18px
+
+@media($mobile)
+  .cases-text
+    padding: 40px 0
+    &__wrapper
+      margin: 0
+
+
 
 .cases-grow
   background: $colorPurple
@@ -673,3 +787,49 @@
     p
       font-size: 20px
       line-height: 1.4
+
+@media($desktop)
+  .cases-grow
+    padding-top: 65px
+    padding-bottom: 70px
+    &__metric
+      flex: 0 0 380px
+      span
+        &:first-child
+          font-size: 75px
+        &:last-child
+          font-size: 55px
+    &__text
+      p
+        font-size: 18px
+
+@media($tablet)
+  .cases-grow
+    padding-bottom: 50px
+    &__wrapper
+      flex-direction: column
+      align-items: flex-start
+    &__metric
+      flex: 0 0 auto
+    &__text
+      flex: 0 0 auto
+      padding-left: 0
+      margin-top: 30px
+
+@media($mobile)
+  .cases-grow
+    &__metric
+      span
+        &:first-child
+          font-size: 65px
+        &:last-child
+          font-size: 48px
+
+@media($mobile-s)
+  .cases-grow
+    &__metric
+      span
+        &:first-child
+          font-size: 56px
+        &:last-child
+          font-size: 42px
