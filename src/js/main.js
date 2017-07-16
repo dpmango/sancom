@@ -86,7 +86,7 @@ $(document).ready(function () {
       var vScroll = _window.scrollTop();
       var header = $('.header').not('.header--static');
       var headerHeight = header.height();
-      var heroHeight = $('.hero').outerHeight() - headerHeight;
+      var breakPoint = $('.page__content > div:first-child').outerHeight() - headerHeight;
 
       if (vScroll > headerHeight) {
         header.addClass('header--transformed');
@@ -94,7 +94,7 @@ $(document).ready(function () {
         header.removeClass('header--transformed');
       }
 
-      if (vScroll > heroHeight) {
+      if (vScroll > breakPoint) {
         header.addClass('header--fixed');
         $('.mobile-menu').addClass('mobile-menu--scrolled');
       } else {
@@ -166,20 +166,25 @@ $(document).ready(function () {
   // PARALLAX
   if (mobileDevice == false) {
     _window.scrolled(10, function () {
+      // save wScroll once
       var wScroll = _window.scrollTop();
-      var depth = $('.hero__image').data('depth');
-      var HeroContainerHeight = $('.hero').height();
 
       // hero lines
-      if (wScroll <= HeroContainerHeight) {
-        $('.hero__image img').css('transform', 'translate3d(0,-' + wScroll / depth + 'px,0)');
+      // this is different because first block on page
+      if ($('.hero__image').length > 0) {
+        if (wScroll <= $('.hero').height()) {
+          $('.hero__image img').css('transform', 'translate3d(0,-' + wScroll / $('.hero__image').data('depth') + 'px,0)');
+        }
       }
 
-      // service lines
-      var serviceBlockOffset = $('.services').offset().top;
-      if (wScroll + _window.height() > serviceBlockOffset && serviceBlockOffset + $('.services').height() > wScroll) {
-        $('.services__image img').css('transform', 'translate3d(0,-' + (wScroll - serviceBlockOffset + $('.services').height()) / $('.services__image').data('depth') + 'px,0)');
-      }
+      // each parrallaxLines
+      $('.js-parallaxLines').each(function (i, val) {
+        var parentObj = $(val).parent().parent().parent();
+        var blockOffset = parentObj.offset().top;
+        if (wScroll + _window.height() > blockOffset && blockOffset + parentObj.height() > wScroll) {
+          $(val).find('img').css('transform', 'translate3d(0,-' + (wScroll - blockOffset + parentObj.height()) / $(val).data('depth') + 'px,0)');
+        }
+      });
     });
   }
 });

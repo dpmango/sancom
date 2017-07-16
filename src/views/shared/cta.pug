@@ -2,8 +2,8 @@
 .cta#sectionCTA
   .container
     .cta__wrapper  
-      .b-title.b-title--purple Давайте общаться
-      .cta__form
+      .b-title.b-title--purple.wow.simpleFadeIn Давайте общаться
+      .cta__form.wow.simpleFadeIn(data-wow-delay='.3s')
         form(action='').js-validateCta
           input(type='tel' name='phone' placeholder='+ 7 ___ ')
           button(type='submit').btn.btn--primary.btn--white
@@ -25,7 +25,7 @@
         .cta__form__toggler(data-text='Оставить запрос' data-action='to-contacts')
           span Другие способы связи
   
-      .cta__text
+      .cta__text.wow.simpleFadeIn(data-wow-delay='.6s')
         .cta__text__left
           p Наша телекоммуникационная лаборатория может предложить вам попробовать решения и продукты совершенно бесплатно прямо сейчас. 
 

@@ -15,48 +15,48 @@ doctype html
             .about-head__wrapper
               .about-head__left
                 .about-head__block
-                  .b-title.b-title--purple SANCOM — это
-                  .b-text телекоммуникационная компания, ориентированная на эффективный результат. Другими словами, на увеличение числа сделок и прибыли нашего клиента!
+                  .b-title.b-title--purple.wow.simpleFadeIn SANCOM — это
+                  .b-text.wow.simpleFadeIn(data-wow-delay='.2s') телекоммуникационная компания, ориентированная на эффективный результат. Другими словами, на увеличение числа сделок и прибыли нашего клиента!
                 .about-head__block
-                  .b-title.b-title--purple Цель —
-                  .b-text — улучшить главные показатели эффективности бизнеса наших клиентов, а именно — продажи  и количество успешных сделок.
-              .about-head__right
-                p SanCom в каждом проекте — это рост показателей ASR и ACD
+                  .b-title.b-title--purple.wow.simpleFadeIn(data-wow-delay='.4s') Цель —
+                  .b-text.wow.simpleFadeIn(data-wow-delay='.6s') — улучшить главные показатели эффективности бизнеса наших клиентов, а именно — продажи  и количество успешных сделок.
+              .about-head__right.wow.simpleFadeRight(data-wow-delay='.3s')
+                .b-ext-text SanCom в каждом проекте — это рост показателей ASR и ACD
         
         // ABOUT NAME
         .about-name
           .container
             .about-name__title
-              .about-name__title__first 
+              .about-name__title__first.wow.simpleFadeIn 
                 .about-name__title__huge San
                 .about-name__title__hint 
                   span Приставка — наиболее распространённое почтительное обращение в Японии, демонстрация уважения. 
-              .about-name__title__second
+              .about-name__title__second.wow.simpleFadeIn(data-wow-delay='.3s')
                 .about-name__title__huge com
                   span munication
                 .about-name__title__hint 
                   span это связь
             .about-name__description
-              .about-name__left
+              .about-name__left.wow.simpleFadeIn(data-wow-delay='.6s')
                 .about-name__caption SanCom отражает две важнейшие ценности нашей компании:
                 ul.about-name__list
                   li 
                     span Качественная и бесперебойная связь
                   li 
                     span Уважение к задачам и бизнесу нашего клиента 
-              .about-name__right
+              .about-name__right.wow.simpleFadeIn(data-wow-delay='.9s')
                 .b-ext-text Девиз лаборатории SanCom — соединяем с результатом!
         
         
         // ABOUT CLIENT 
         .about-client
           .container
-            .b-title.b-title--purple Кто наш клиент
+            .b-title.b-title--purple.wow.simpleFadeIn  Кто наш клиент
             .about-client__wrapper
-              .about-client__left
+              .about-client__left.wow.simpleFadeIn(data-wow-delay='.3s')
                 p Если обрыв связи или потеря звонка означает для вас потерю дохода, то вы — наш клиент! 
                 p Задача SanCom заключается в том, чтобы наши клиенты не замечали сбоев и проблем с коммуникацией, которые, к сожалению, повсеместно случаются на международном рынке телефонной связи. 
-              .about-client__right
+              .about-client__right.wow.simpleFadeIn(data-wow-delay='.6s')
                 .b-ext-text Основной фокус мы делаем на колл-центрах, ориентированных
         
         // ABOUT SERVICE
@@ -64,24 +64,24 @@ doctype html
           .container
             .about-service__wrapper
               .about-service__content
-                .b-title Индивидуальный <br> сервис
+                .b-title.wow.simpleFadeIn  Индивидуальный <br> сервис
                 .about-service__content-description
-                  .about-service__content-description__col
+                  .about-service__content-description__col.wow.simpleFadeIn(data-wow-delay='.3s')
                     p Мы полностью убрали лишних людей из процесса общения  с клиентом. У нас вы работаете напрямую только с профессионалами, способными самостоятельно ответить на вопросы, диагностировать и устранить возникшую проблему. Наш специалист даст исчерпывающие рекомендации и объяснит какие варианты решения существуют и какие из них наиболее оптимальны в конкретном случае. 
                     p Мы внедрили по-настоящему индивидуальный сервис. Наши клиенты привыкли к тому, что специалист знает историю сотрудничества и мгновенно вникает в суть обращения и специфику клиентского бизнеса. 
                   .about-service__content-description__col
-                    p Кроме продуктов и решений, мы делаем акцент на сервисе. Поэтому нашими внутренними KPI оптимальной работы с клиентом является:
+                    p.wow.simpleFadeIn(data-wow-delay='.6s') Кроме продуктов и решений, мы делаем акцент на сервисе. Поэтому нашими внутренними KPI оптимальной работы с клиентом является:
                     .about-service__caption-row
-                      .about-service__caption
+                      .about-service__caption.wow.simpleFadeIn(data-wow-delay='.8s')
                         .about-service__caption__name 
                           span 3 минуты
                         p Время отклика <br> службы поддержки.
-                      .about-service__caption
+                      .about-service__caption.wow.simpleFadeIn(data-wow-delay='1s')
                         .about-service__caption__name 
                           span 15 минут
                         p время анализа проблемы  и определение решения
                     
-              .about-service__image
+              .about-service__image.js-parallaxLines.wow.simpleFadeIn(data-depth='4' data-wow-delay='.3s')
                 img(src='images/lines3.png' srcset='images/lines3@2x.png 2x')
                   
                 
@@ -93,7 +93,7 @@ doctype html
             .about-team__wrapper
               .about-team__image
                 img(src='images/aboutTeam.png' srcset='images/aboutTeam@2x.png 2x')
-                .about-team__image-overlay
+                .about-team__image-overlay.js-parallaxLines(data-depth='5')
                   img(src='images/linesAboutTeam.png' srcset='images/linesAboutTeam@2x.png 2x')
               // person
               .about-team__person.about-team__person--left-top
