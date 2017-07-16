@@ -1866,7 +1866,8 @@ button:focus {
 }
 .cta__wrapper {
     overflow: hidden;
-    margin: 0 8.6%;
+    margin: 0 auto;
+    max-width: 960px;
 }
 .cta__form {
     position: relative;
@@ -1979,7 +1980,7 @@ button:focus {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     margin-left: auto;
-    margin-left: 40px;
+    padding-left: 40px;
     min-width: 0;
     color: white;
     font-weight: 500;
@@ -2030,7 +2031,12 @@ button:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
 }
-.cta__form__contacts a {}
+.cta__form__contacts a {
+    padding-right: 10px;
+}
+.cta__form__contacts a:last-child {
+    padding-right: 0;
+}
 .cta__form__contacts a:hover .icon {}
 .cta__form__contacts a:hover .icon:before {
     color: #39FF4A;
@@ -2113,6 +2119,128 @@ button:focus {
     padding-left: 20px;
     opacity: .6;
     -webkit-box-flex: 0;
+}
+@media(max-width: 880px) {
+    .cta {}
+    .cta__wrapper {
+        overflow: visible;
+    }
+    .cta__form {
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 55px 30px;
+    }
+}
+@media(max-width: 785px) {
+    .cta {
+        padding: 60px 0 55px 0;
+    }
+    .cta__wrapper {
+        overflow: hidden;
+    }
+    .cta__form {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 40px 30px;
+    }
+    .cta__form form {
+        -webkit-flex: 0 1 auto;
+            -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-align-items: flex-start;
+                align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+        -webkit-box-flex: 0;
+    }
+    .cta__form input {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    .cta__form button {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .cta__form__contacts {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-justify-content: flex-start;
+                justify-content: flex-start;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+    }
+    .cta__form__contacts a {
+        margin: 10px 0;
+        -webkit-transform: scale(.85);
+            -ms-transform: scale(.85);
+                transform: scale(.85);
+    }
+}
+@media(max-width: 568px) {
+    .cta {}
+    .cta__wrapper {
+        overflow: visible;
+    }
+    .cta__form {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top: 40px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+    }
+    .cta__form form {
+        -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+        -webkit-box-flex: 0;
+    }
+    .cta__form input {
+        width: 100%;
+    }
+    .cta__form__toggler {
+        margin-right: auto;
+        padding-top: 10px;
+        padding-left: 0;
+    }
+    .cta__text {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-right: 20px;
+        margin-left: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+    }
+    .cta__text__left {
+        -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+        padding-right: 0;
+        -webkit-box-flex: 0;
+    }
+    .cta__text__right {
+        -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+        padding-left: 0;
+        -webkit-box-flex: 0;
+    }
+}
+@media(max-width: 414px) {
+    .cta {}
+    .cta__form {
+        margin-right: -20px;
+        margin-left: -20px;
+    }
 }
 /* SOME INNER PAGES CONTENT */
 /* ABOUT */

@@ -565,7 +565,8 @@
   background: #F5F5F5
   padding: 80px 0 75px 0
   &__wrapper
-    margin: 0 8.6%
+    margin: 0 auto
+    max-width: 960px
     overflow: hidden
   &__form
     position: relative
@@ -626,7 +627,7 @@
       color: white
       flex: 0 0 auto
       font-size: 14px
-      margin-left: 40px
+      padding-left: 40px
       font-weight: 500
       cursor: pointer
       transition: all $transitionSpeed $ease
@@ -651,6 +652,9 @@
       justify-content: space-between
       align-items: center
       a
+        padding-right: 10px
+        &:last-child
+          padding-right: 0
         &:hover
           .icon
             &::before
@@ -702,3 +706,72 @@
       padding-left: 20px
       flex: 0 1 450px
       opacity: .6
+
+@media(width <= 880px)
+  .cta
+    &__wrapper
+      overflow: visible
+    &__form
+      padding: 55px 30px
+      margin-left: -20px
+      margin-right: -20px
+
+@media($tablet)
+  .cta
+    padding: 60px 0 55px 0
+    &__wrapper
+      overflow: hidden
+    &__form
+      padding: 40px 30px
+      margin-left: 0
+      margin-right: 0
+      form
+        flex-direction: column
+        align-items: flex-start
+        flex: 0 1 auto
+      input
+        margin-bottom: 20px
+        max-width: 100%
+      button
+        margin-left: auto
+        margin-right: auto
+      &__contacts
+        flex-wrap: wrap
+        justify-content: flex-start
+        margin-top: -10px
+        margin-bottom: -10px
+        a
+          margin: 10px 0
+          transform: scale(.85)
+
+@media($mobile)
+  .cta
+    &__wrapper
+      overflow: visible
+    &__form
+      margin-top: 40px
+      flex-direction: column
+      form
+        flex: 0 0 auto
+      input
+        width: 100%
+      &__toggler
+        padding-top: 10px
+        margin-right: auto
+        padding-left: 0
+    &__text
+      flex-direction: column
+      margin-left: 20px
+      margin-right: 20px
+      &__left
+        flex: 0 0 auto
+        padding-right: 0
+      &__right
+        flex: 0 0 auto
+        padding-left: 0
+
+@media($mobile-s)
+  .cta
+    &__form
+      margin-left: -20px
+      margin-right: -20px
