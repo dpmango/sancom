@@ -1585,6 +1585,9 @@ button:focus {
 }
 @media(max-width: 960px) {
     .formula {}
+    .formula--hero {
+        padding-top: 160px;
+    }
     .formula__step {
         margin-right: 25px;
     }
@@ -1627,6 +1630,9 @@ button:focus {
 }
 @media(max-width: 568px) {
     .formula {}
+    .formula--hero {
+        padding-top: 130px;
+    }
     .formula__wrapper {
         margin-left: 0;
     }
@@ -3155,6 +3161,57 @@ button:focus {
 }
 .t-purple {
     color: #6000FF;
+}
+@media(max-width: 960px) {
+    .solutions {}
+    .solutions__wrapper {
+        margin: 40px 20px 0 20px;
+    }
+    .solutions__card {
+        margin-top: 50px;
+        padding-bottom: 40px;
+    }
+    .solutions__card__name {
+        font-size: 32px;
+    }
+}
+@media(max-width: 785px) {
+    .solutions {
+        padding-bottom: 30px;
+    }
+    .solutions__intro p {
+        font-size: 18px;
+    }
+    .solutions__card {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+    }
+    .solutions__card__left {
+        -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+        -webkit-box-flex: 0;
+    }
+    .solutions__card__right {
+        margin-top: 15px;
+        padding-left: 0;
+    }
+}
+@media(max-width: 568px) {
+    .solutions {}
+    .solutions__intro p {
+        font-size: 16px;
+    }
+    .solutions__wrapper {
+        margin: 30px 0px 0 0px;
+    }
+    .solutions__card {}
+    .solutions__card__name {
+        font-size: 28px;
+    }
 }
 /* CASES */
 .cases-head {
