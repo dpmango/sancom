@@ -510,37 +510,36 @@
 
 @media($mobile)
   .slick-arrow
+    opacity: 0
     display: none
 
 .slick-dots
-  margin-left: 56.5%
-  margin: 0
+  margin-left: 53.5%
   margin-top: -25px
-  padding: 0
   li
     font-size: 0
-    button
-      -webkit-appearance: none
-      background: none
-      font-size: 0
+    margin-right: 10px
+    &::after
+      display: block
+      content: ' '
+      size: 10px
+      background: $colorPurple
+      opacity: .2
       cursor: pointer
       transform: rotate(45deg)
-      &::after
-        display: block
-        content: ' '
-        size: 10px
-        background: $colorPurple
-        opacity: .2
-        cursor: pointer
-        transition: all $transitionSpeed $ease
+      transition: all $transitionSpeed $ease
+    button
+      display: none
     &.slick-active
-      button
-        &::after
-          opacity: 1
+      &::after
+        opacity: 1
+    &:last-child
+      margin-right: 0
 
 @media($tablet)
   .slick-dots
-    margin-left: 0
+    margin: 0
+    padding: 0
     position: absolute
     bottom: 0
     left: 50%
