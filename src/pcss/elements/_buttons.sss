@@ -32,17 +32,14 @@ button
       transition: all .8s 0s ease-out
       transform: translateX(100%)
   &--primary
-    padding: 21px 35px
+    padding: 22px 35px
     font-size: 12px
     letter-spacing: .22px
     text-transform: uppercase
     color: white
     font-weight: 500
-    border: 2px solid transparent
     background: $colorPurple
     transition: border .3s .15s ease-out
-    &:hover
-      border-color: $colorGreen
     &::after
       background: linear-gradient(90deg,  color($colorPurple a(100%)) 0%,color($colorGreen a(100%)) 94%,color($colorPurple a(100%)) 100%)
   &--white
@@ -52,7 +49,6 @@ button
     &::after
       background: linear-gradient(90deg,  color($colorGreen a(100%)) 0%,color($colorPurple a(100%)) 94%,color($colorGreen a(100%)) 100%)
     &:hover
-      border-color: white
       background: $colorGreen
       color: white
   &:focus, &:active

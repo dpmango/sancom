@@ -19,11 +19,13 @@
     img, svg
       max-width: 100%
       overflow: visible
+      transition: fill .3s
     #letters
       fill: white
+      transition: fill .3s
     &:hover
-      #blocks
-        animation: tada 1s ease
+      #letters
+        fill: $colorGreen
   &__menu
     flex: 0 1 auto
     margin-left: auto
@@ -77,7 +79,10 @@
     transition: transform $transitionSpeed $ease
     .header__logo
       #letters
-        fill: black
+        fill: #1F1F1F
+      &:hover
+        #letters
+          fill: $colorGreen
     .hamburger-inner
       background-color: black
       &::before, &::after
@@ -92,7 +97,11 @@
     color: $fontColor
     .header__logo
       #letters
-        fill: black
+        fill: #1F1F1F
+      &:hover
+        #letters
+          fill: $colorGreen
+
     .header__cta
       &:hover
         color: $colorPurple
