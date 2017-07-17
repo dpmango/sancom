@@ -1947,6 +1947,12 @@ button:focus {
         padding-top: 10px;
         margin-right: auto;
         padding-left: 0;}
+      .cta__form__contacts {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding-bottom: 10px;}
     .cta__text {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;

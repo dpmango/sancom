@@ -157,7 +157,7 @@ $(document).ready(function(){
     boxClass:     'wow',      // default
     animateClass: 'animated', // default
     offset:       0,          // default
-    mobile:       false,       // default
+    mobile:       true,       // default
     live:         false        // default
   });
   wow.init();
