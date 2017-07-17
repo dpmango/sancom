@@ -164,7 +164,7 @@ $(document).ready(function () {
   wow.init();
 
   // PARALLAX
-  if (mobileDevice == false) {
+  if (false == false) {
     _window.scrolled(10, function () {
       // save wScroll once
       var wScroll = _window.scrollTop();

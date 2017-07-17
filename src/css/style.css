@@ -1780,6 +1780,7 @@ button:focus {
               flex: 0 0 0%;
       height: .1px;
       width: .1px;
+      pointer-events: none;
       overflow: hidden;
       min-height: 62px;
       -webkit-transform: translate3d(100%,0,0);
@@ -1837,10 +1838,12 @@ button:focus {
                 flex: 0 0 0%;
         height: .1px;
         width: .1px;
+        pointer-events: none;
         opacity: 0;
         -webkit-transform: translate3d(-100%,0,0);
                 transform: translate3d(-100%,0,0);}
 .cta__form.slide .cta__form__contacts {
+        pointer-events: all;
         -webkit-box-flex: 1;
         -webkit-flex: 1 1 auto;
             -ms-flex: 1 1 auto;
