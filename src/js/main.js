@@ -27,6 +27,10 @@ $(document).ready(function () {
     }
   }
 
+  if (mobileDevice) {
+    $('body').addClass('is-mobile');
+  }
+
   //////////
   // COMMON
   //////////
@@ -119,6 +123,20 @@ $(document).ready(function () {
     } else {
       $(val).removeClass('active');
     }
+  });
+
+  // header lang
+  $('.header__lang__visible').on('click', function () {
+    $('.header__lang__drop').toggleClass('active');
+    setTimeout(function () {
+      $('.header__lang__drop').toggleClass('reverseDelay');
+    }, 500);
+  });
+
+  $('.header__lang__drop span').on('click', function () {
+    var langText = $(this).text();
+    $(this).closest('.header__lang').find('.header__lang__visible').text(langText);
+    $(this).parent().removeClass('active');
   });
 
   //////////
