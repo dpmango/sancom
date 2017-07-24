@@ -2119,6 +2119,8 @@ button:focus {
       font-size: 20px;
       line-height: 1.4;
       color: #6000FF;}
+.benefits__item__content .btn {
+        margin-top: 10px;}
 @media(max-width: 960px) {
   .benefits {
     padding: 90px 0;}
@@ -2191,7 +2193,7 @@ button:focus {
     display: none;}}
 .slick-dots {
   margin-left: 53.5%;
-  margin-top: -25px;}
+  margin-top: 15px;}
 .slick-dots li {
     font-size: 0;
     margin-right: 10px;}
