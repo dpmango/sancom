@@ -647,6 +647,12 @@
     margin: 0 auto
     max-width: 960px
     overflow: hidden
+  &__top-text
+    font-size: 20px
+    line-height: 1.4
+    color: $colorPurple
+    margin-top: 50px
+    max-width: 605px
   &__form
     position: relative
     display: flex
@@ -678,6 +684,8 @@
       opacity: 1
       transition: transform $transitionSpeed .2s $ease, opacity .4s ease
     input
+      font-family: 'AkzidenzGroteskPro'
+      font-weight: 400
       flex: 0 1 auto
       min-width: 0
       -webkit-appearance: none
@@ -709,14 +717,14 @@
       padding-left: 40px
       font-weight: 500
       cursor: pointer
-      transition: all $transitionSpeed $ease
+      transition: color $transitionSpeed $ease
       &:hover
-        color: color(white a(70%))
+        color: #6000FF
         span
-          border-color: transparent
+          border-color: #6000FF
       span
         border-bottom: 1px solid white
-        transition: all $transitionSpeed $ease
+        transition: border $transitionSpeed $ease
     &__contacts
       min-width: 0
       flex: 0 0 0px
@@ -769,6 +777,12 @@
         pointer-events: none
         opacity: 0
         transform: translate3d(-100%,0,0)
+      .cta__form__toggler
+        &:hover
+          color: $colorGreen
+          span
+            border-color: $colorGreen
+
       .cta__form__contacts
         pointer-events: all
         flex: 1 1 auto
@@ -805,6 +819,9 @@
     padding: 60px 0 55px 0
     &__wrapper
       overflow: hidden
+    &__top-text
+      font-size: 18px
+      margin-top: 35px
     &__form
       padding: 40px 30px
       margin-left: 0
@@ -832,6 +849,9 @@
   .cta
     &__wrapper
       overflow: visible
+    &__top-text
+      font-size: 16px
+      margin-top: 25px
     &__form
       margin-top: 40px
       flex-direction: column

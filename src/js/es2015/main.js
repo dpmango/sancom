@@ -153,6 +153,15 @@ $(document).ready(function(){
     variableWidth: false
   });
 
+  $('.cases-formula__slider').slick({
+    autoplay: true,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1
+  });
+
   // CTA FORM
   var ctaFormTogglerText
   $('.cta__form__toggler').on('click', function(){
@@ -169,7 +178,7 @@ $(document).ready(function(){
 
   });
 
-  $("input[type='tel']").mask("+7 (000) 000-0000", {placeholder: "+7 (___) ___-____"});
+  $("input[type='tel']").mask("+7 (000) 000-0000", {placeholder: "+7 ___"});
 
   // reveal scroll animations - wow
   var wow = new WOW({
@@ -207,6 +216,16 @@ $(document).ready(function(){
           );
         }
       })
+
+      if ( $('.solutions__card__icon').length > 0 ){
+
+        $('.solutions__card__icon .ico').each(function(i,val){
+          $(val).css(
+            'transform', 'rotate(' + (wScroll / $(val).data('depth') ) + 'deg)'
+          );
+        });
+
+      }
 
 
     });

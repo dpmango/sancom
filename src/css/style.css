@@ -1752,6 +1752,12 @@ button:focus {
     margin: 0 auto;
     max-width: 960px;
     overflow: hidden;}
+.cta__top-text {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #6000FF;
+    margin-top: 50px;
+    max-width: 605px;}
 .cta__form {
     position: relative;
     display: -webkit-box;
@@ -1815,6 +1821,8 @@ button:focus {
       transition: transform .25s .2s ease-in-out, opacity .4s ease;
       transition: transform .25s .2s ease-in-out, opacity .4s ease, -webkit-transform .25s .2s ease-in-out;}
 .cta__form input {
+      font-family: 'AkzidenzGroteskPro';
+      font-weight: 400;
       -webkit-box-flex: 0;
       -webkit-flex: 0 1 auto;
           -ms-flex: 0 1 auto;
@@ -1864,18 +1872,18 @@ button:focus {
       padding-left: 40px;
       font-weight: 500;
       cursor: pointer;
-      -webkit-transition: all .25s ease-in-out;
-      -o-transition: all .25s ease-in-out;
-      transition: all .25s ease-in-out;}
+      -webkit-transition: color .25s ease-in-out;
+      -o-transition: color .25s ease-in-out;
+      transition: color .25s ease-in-out;}
 .cta__form__toggler:hover {
-  color: rgba(255, 255, 255, 0.7);}
+  color: #6000FF;}
 .cta__form__toggler:hover span {
-          border-color: transparent;}
+          border-color: #6000FF;}
 .cta__form__toggler span {
         border-bottom: 1px solid white;
-        -webkit-transition: all .25s ease-in-out;
-        -o-transition: all .25s ease-in-out;
-        transition: all .25s ease-in-out;}
+        -webkit-transition: border .25s ease-in-out;
+        -o-transition: border .25s ease-in-out;
+        transition: border .25s ease-in-out;}
 .cta__form__contacts {
       min-width: 0;
       -webkit-box-flex: 0;
@@ -1950,6 +1958,10 @@ button:focus {
         opacity: 0;
         -webkit-transform: translate3d(-100%,0,0);
                 transform: translate3d(-100%,0,0);}
+.cta__form.slide .cta__form__toggler:hover {
+  color: #39FF4A;}
+.cta__form.slide .cta__form__toggler:hover span {
+            border-color: #39FF4A;}
 .cta__form.slide .cta__form__contacts {
         pointer-events: all;
         -webkit-box-flex: 1;
@@ -1995,6 +2007,9 @@ button:focus {
     padding: 60px 0 55px 0;}
     .cta__wrapper {
       overflow: hidden;}
+    .cta__top-text {
+      font-size: 18px;
+      margin-top: 35px;}
     .cta__form {
       padding: 40px 30px;
       margin-left: 0;
@@ -2037,6 +2052,9 @@ button:focus {
 @media(max-width: 568px) {
     .cta__wrapper {
       overflow: visible;}
+    .cta__top-text {
+      font-size: 16px;
+      margin-top: 25px;}
     .cta__form {
       margin-top: 40px;
       -webkit-box-orient: vertical;
@@ -2120,9 +2138,9 @@ button:focus {
     position: relative;
     z-index: 2;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 58.3%;
-        -ms-flex: 0 1 58.3%;
-            flex: 0 1 58.3%;
+    -webkit-flex: 0 1 53%;
+        -ms-flex: 0 1 53%;
+            flex: 0 1 53%;
     min-height: -webkit-calc(100vh - 300px);
     min-height: calc(100vh - 300px);
     max-height: 700px;
@@ -2145,9 +2163,9 @@ button:focus {
     position: relative;
     z-index: 2;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 41.6%;
-        -ms-flex: 0 1 41.6%;
-            flex: 0 1 41.6%;
+    -webkit-flex: 0 1 47%;
+        -ms-flex: 0 1 47%;
+            flex: 0 1 47%;
     padding-left: 40px;}
 .about-head__right .b-ext-text {
       margin-top: 0;}
@@ -2191,19 +2209,20 @@ button:focus {
   padding-top: 60px;
   padding-bottom: 80px;}
 .about-name__title {
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 60px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    position: relative;}
+    position: relative;
+    z-index: 2;}
 .about-name__title__first {
       display: inline-block;
       position: relative;}
 .about-name__title__first .about-name__title__hint {
         left: 0;
-        top: -100px;}
+        top: -65px;}
 .about-name__title__first .about-name__title__hint:after {
   display: inline-block;}
 .about-name__title__second {
@@ -2239,16 +2258,36 @@ button:focus {
   background: #39FF4A;
   margin-left: 7px;}
 .about-name__description {
-    margin-top: 60px;
+    margin-bottom: 60px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;}
-.about-name__left {
+.about-name__image {
+    position: relative;
+    z-index: 1;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 58.3%;
-        -ms-flex: 0 0 58.3%;
-            flex: 0 0 58.3%;
+    -webkit-flex: 0 0 120px;
+        -ms-flex: 0 0 120px;
+            flex: 0 0 120px;
+    margin-left: auto;}
+.about-name__image img {
+      position: absolute;
+      top: -50px;
+      right: 0;
+      max-width: 100%;
+      -webkit-transition: -webkit-transform .1s ease;
+      transition: -webkit-transform .1s ease;
+      -o-transition: transform .1s ease;
+      transition: transform .1s ease;
+      transition: transform .1s ease, -webkit-transform .1s ease;}
+.about-name__left {
+    position: relative;
+    z-index: 2;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 680px;
+        -ms-flex: 0 1 680px;
+            flex: 0 1 680px;
     padding-right: 20px;}
 .about-name__right {
     -webkit-box-flex: 0;
@@ -2257,8 +2296,8 @@ button:focus {
             flex: 0 0 41.6%;
     margin-top: -5px;}
 .about-name__caption {
-    margin-left: 20px;
-    max-width: 440px;
+    /* margin-left: 20px */
+    /* max-width: 440px */
     font-size: 24px;
     color: #39FF4A;
     font-weight: 900;
@@ -2296,11 +2335,11 @@ button:focus {
         font-size: 65px;}}
 @media(max-width: 785px) {
   .about-name {
+    position: relative;
     padding-bottom: 60px;}
       .about-name__title__huge {
         font-size: 50px;}
     .about-name__description {
-      margin-top: 40px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
@@ -2311,6 +2350,10 @@ button:focus {
       -webkit-flex: 0 0 auto;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;}
+    .about-name__image {
+      position: absolute;
+      top: 0;
+      right: 20px;}
     .about-name__right {
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 auto;
@@ -2350,9 +2393,9 @@ button:focus {
     display: flex;}
 .about-client__left {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 58.3%;
-        -ms-flex: 0 1 58.3%;
-            flex: 0 1 58.3%;
+    -webkit-flex: 0 1 55%;
+        -ms-flex: 0 1 55%;
+            flex: 0 1 55%;
     margin-right: 7%;
     padding-left: 8.6%;}
 .about-client__left p {
@@ -2362,10 +2405,10 @@ button:focus {
 .about-client__right {
     padding-top: 1em;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 41.6%;
-        -ms-flex: 0 1 41.6%;
-            flex: 0 1 41.6%;
-    max-width: 400px;}
+    -webkit-flex: 0 1 45%;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+    max-width: 440px;}
 @media(max-width: 785px) {
   .about-client {
     padding: 70px 0;}
@@ -2550,21 +2593,22 @@ button:focus {
         transition: transform .1s ease, -webkit-transform .1s ease;}
 .about-team__person {
     position: absolute;
-    max-width: 300px;}
+    max-width: 260px;}
 .about-team__person--left-top {
       left: 0;
-      top: 10%;}
+      top: 5%;}
 .about-team__person--left-center {
+      max-width: 240px;
       left: 0;
-      top: 52%;}
+      top: 45%;}
 .about-team__person--right-center {
-      max-width: 240px;
+      max-width: 215px;
       right: 0;
-      top: 30%;}
+      top: 27%;}
 .about-team__person--right-bottom {
-      max-width: 240px;
-      right: 15%;
-      bottom: 7%;}
+      max-width: 270px;
+      right: 10%;
+      bottom: 0%;}
 .about-team__person__name {
       font-size: 24px;
       color: #39FF4A;
@@ -2657,6 +2701,8 @@ button:focus {
       line-height: 1.3;
       margin-bottom: 10px;
       color: #6000FF;}
+.solutions__card__name img {
+        max-width: 100%;}
 .solutions__card__scope {
       font-size: 14px;
       line-height: 1.4;
@@ -2676,6 +2722,10 @@ button:focus {
         transition: all .25s ease-in-out;}
 .solutions__card__text a:hover {
   color: #39FF4A;}
+.solutions__card__text--hero p {
+          font-size: 20px;}
+.solutions__card__text--hero p:first-child {
+  margin-top: 0;}
 .solutions__card__icon {
       margin-top: 10px;
       -webkit-box-flex: 0;
@@ -2683,6 +2733,12 @@ button:focus {
           -ms-flex: 0 0 70px;
               flex: 0 0 70px;
       text-align: center;}
+.solutions__card__icon .ico {
+        -webkit-transition: -webkit-transform .1s linear;
+        transition: -webkit-transform .1s linear;
+        -o-transition: transform .1s linear;
+        transition: transform .1s linear;
+        transition: transform .1s linear, -webkit-transform .1s linear;}
 .solutions--cases {
     padding-top: 60px;}
 .solutions--cases .solutions__intro {
@@ -2729,6 +2785,8 @@ button:focus {
       .solutions__card__right {
         margin-top: 15px;
         padding-left: 0;}
+          .solutions__card__text--hero p {
+            font-size: 16px;}
           .solutions--cases .solutions__card__left {
             -webkit-box-flex: 0;
             -webkit-flex: 0 0 auto;
@@ -2851,14 +2909,25 @@ button:focus {
         -ms-flex-align: center;
             align-items: center;}
 .cases-formula__top__content {
+      min-width: 0;
       -webkit-box-flex: 0;
       -webkit-flex: 0 1 600px;
           -ms-flex: 0 1 600px;
               flex: 0 1 600px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
       margin-right: 20px;}
 .cases-formula__top__content img {
         margin-top: 60px;
-        max-width: 100%;}
+        max-width: 100%;
+        display: inline-block;}
 .cases-formula__top__image {
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 300px;
@@ -2867,6 +2936,8 @@ button:focus {
       margin-left: auto;}
 .cases-formula__top__image svg, .cases-formula__top__image img {
         max-width: 100%;}
+.cases-formula__slide img {
+      width: auto;}
 .cases-formula__text {
     margin: 120px -20px 0 -20px;
     display: -webkit-box;

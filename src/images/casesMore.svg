@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="33px" viewBox="0 0 160 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45 (43475) - http://www.bohemiancoding.com/sketch -->
+    <title>casesMore</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cases" transform="translate(-201.000000, -3122.000000)">
+            <g id="casesMore" transform="translate(185.000000, 3122.000000)">
+                <polygon id="Rectangle-Copy" fill="#6000FF" transform="translate(16.263456, 16.263456) rotate(-45.000000) translate(-16.263456, -16.263456) " points="27.763456 4.76345597 27.763456 27.763456 4.76345597 27.763456"></polygon>
+                <polygon id="Rectangle-Copy-2" fill="#6000FF" transform="translate(63.930123, 16.263456) rotate(-45.000000) translate(-63.930123, -16.263456) " points="75.4301226 4.76345597 75.4301226 27.763456 52.4301226 27.763456"></polygon>
+                <polygon id="Rectangle-Copy-3" fill="#6000FF" transform="translate(111.596789, 16.263456) rotate(-45.000000) translate(-111.596789, -16.263456) " points="123.096789 4.76345597 123.096789 27.763456 100.096789 27.763456"></polygon>
+                <polygon id="Rectangle-Copy-4" fill="#39FF4A" transform="translate(159.263456, 16.263456) rotate(-45.000000) translate(-159.263456, -16.263456) " points="170.763456 4.76345597 170.763456 27.763456 147.763456 27.763456"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

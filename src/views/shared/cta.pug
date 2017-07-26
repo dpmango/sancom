@@ -3,11 +3,13 @@
   .container
     .cta__wrapper  
       .b-title.b-title--purple.wow.simpleFadeIn Давайте общаться
+      .cta__top-text.wow.simpleFadeIn(data-wow-delay='.15s') Проведите свой собственный эксперимент связи  <br> и протестируйте решения SANCOM на ваших задачах уже сегодня.  Это совершенно бесплатно!
+      
       .cta__form.wow.simpleFadeIn(data-wow-delay='.3s')
         form(action='').js-validateCta
           input(type='tel' name='phone' placeholder='+ 7 ___ ')
           button(type='submit').btn.btn--primary.btn--white
-            span Подробнее о sancom
+            span Сделать запрос
         .cta__form__contacts
           a(href='#')
             i.icon.icon-skype

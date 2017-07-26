@@ -21,32 +21,36 @@ doctype html
                   .b-title.b-title--purple.wow.simpleFadeIn(data-wow-delay='.4s') Цель —
                   .b-text.wow.simpleFadeIn(data-wow-delay='.6s') — улучшить главные показатели эффективности бизнеса наших клиентов, а именно — продажи  и количество успешных сделок.
               .about-head__right.wow.simpleFadeRight(data-wow-delay='.3s')
-                .b-ext-text SanCom в каждом проекте — это рост показателей ASR и ACD
+                .b-ext-text Девиз лаборатории SanCom — соединяем с результатом!
         
         // ABOUT NAME
         .about-name
           .container
+            .about-name__description
+              .about-name__left.wow.simpleFadeIn(data-wow-delay='.6s')
+                .about-name__caption Происхождение названия SANCOM  тесно связанно с философией компании. 
+              .about-name__image.js-parallaxLines.wow.simpleFadeIn(data-depth='2' data-wow-delay='.3s')
+                img(src='images/lines_4.png' srcset='images/lines_4@2x.png 2x')  
             .about-name__title
               .about-name__title__first.wow.simpleFadeIn 
                 .about-name__title__huge San
                 .about-name__title__hint 
-                  span Приставка — наиболее распространённое почтительное обращение в Японии, демонстрация уважения. 
+                  span SANE — разумный. 
               .about-name__title__second.wow.simpleFadeIn(data-wow-delay='.3s')
                 .about-name__title__huge com
                   span munication
                 .about-name__title__hint 
-                  span это связь
-            .about-name__description
-              .about-name__left.wow.simpleFadeIn(data-wow-delay='.6s')
-                .about-name__caption SanCom отражает две важнейшие ценности нашей компании:
-                ul.about-name__list
-                  li 
-                    span Качественная и бесперебойная связь
-                  li 
-                    span Уважение к задачам и бизнесу нашего клиента 
-              .about-name__right.wow.simpleFadeIn(data-wow-delay='.9s')
-                .b-ext-text Девиз лаборатории SanCom — соединяем с результатом!
-        
+                  span Общение, коммуникации.
+            //- .about-name__description
+            //-   .about-name__left.wow.simpleFadeIn(data-wow-delay='.6s')
+            //-     .about-name__caption SanCom отражает две важнейшие ценности нашей компании:
+            //-     ul.about-name__list
+            //-       li 
+            //-         span Качественная и бесперебойная связь
+            //-       li 
+            //-         span Уважение к задачам и бизнесу нашего клиента 
+            //-   .about-name__right.wow.simpleFadeIn(data-wow-delay='.9s')
+            //-     .b-ext-text Девиз лаборатории SanCom — соединяем с результатом!
         
         // ABOUT CLIENT 
         .about-client
@@ -57,8 +61,8 @@ doctype html
                 p Если обрыв связи или потеря звонка означает для вас потерю дохода, то вы — наш клиент! 
                 p Задача SanCom заключается в том, чтобы наши клиенты не замечали сбоев и проблем с коммуникацией, которые, к сожалению, повсеместно случаются на международном рынке телефонной связи. 
               .about-client__right.wow.simpleFadeIn(data-wow-delay='.6s')
-                .b-ext-text Основной фокус мы делаем на колл-центрах, ориентированных
-        
+                .b-ext-text Основной фокус  мы делаем на  колл-центрах, ориентированных на результативные продажи. 
+
         // ABOUT SERVICE
         .about-service
           .container
@@ -97,21 +101,28 @@ doctype html
                   img(src='images/linesAboutTeam.png' srcset='images/linesAboutTeam@2x.png 2x')
               // person
               .about-team__person.about-team__person--left-top
-                .about-team__person__name Теодор Рузвельт
-                .about-team__person__desc заведующий лабораторией, делает все и иногда чуть больше. Теннис и автомобили, но после работы!
+                .about-team__person__name Дмитрий
+                .about-team__person__desc 
+                  p руководитель и генератор идей лаборатории, DevOps, делает все  и иногда чуть больше. 
+                  p Держит руку на пульсе развития высоких технологий. Следит за открытиями  и трендами. Получает удовольствие от решения нестандартных задач, ценит общение с самобытными и творческими личностями.
               // person
               .about-team__person.about-team__person--left-center
-                .about-team__person__name Теодор Рузвельт
-                .about-team__person__desc заведующий лабораторией, делает все и иногда чуть больше. Теннис и автомобили, но после работы!
+                .about-team__person__name Ангелина
+                .about-team__person__desc 
+                  p работа с клиентами и партнёрами. Оперативная реакция, мгновенное понимание сути, ответы на любые вопросы и решение любых задач. 
+                  p Неравнодушна к ландшафтному дизайну и эспериментам с интерьером, вдохновляется фантастической и духовной литературой.
               // person
               .about-team__person.about-team__person--right-center
-                .about-team__person__name Себастиан Бах
-                .about-team__person__desc заведующий лабораторией, делает все и иногда чуть больше. Теннис и автомобили, но после работы!
+                .about-team__person__name Сандра
+                .about-team__person__desc 
+                  p юридическое и финансовое сопровождение процессов. Компетентность, пунктуальность и ответственность составляют профессиональное кредо. 
+                  p Вне работы перевоплощается  и исповедует религию стиля, моды и красоты.
               // person
               .about-team__person.about-team__person--right-bottom
-                .about-team__person__name Себастиан Бах
-                .about-team__person__desc заведующий лабораторией, делает все и иногда чуть больше. Теннис и автомобили, но после работы!
-              
+                .about-team__person__name Влад
+                .about-team__person__desc 
+                  p Full stack developer — технологические разработки, поддержка рабочих решений. Комплексное решение технологических задач с последующим сопровождением — от создания концепций до написания программных компонент. 
+                  p Увлекается автомобилями во всем их многообразии - тюнинг и преображение стандартного в нестандартное.
         
         include shared/cta.pug
         

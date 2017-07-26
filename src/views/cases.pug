@@ -26,9 +26,15 @@ doctype html
         .cases-formula
           .container
             .cases-formula__top
-              .cases-formula__top__content
-                .b-title.wow.simpleFadeIn Формула ASR:
-                img(src='images/formula.png' srcset='images/formula@2x.png' data-wow-delay='.2s').wow.simpleFadeIn
+              .cases-formula__top__content.wow.simpleFadeIn
+                .cases-formula__slider
+                  .cases-formula__slide
+                    .b-title Формула ASR:
+                    img(src='images/formula.png' srcset='images/formula@2x.png')
+                  .cases-formula__slide
+                    .b-title Формула ACD:
+                    img(src='images/formula.png' srcset='images/formula@2x.png')
+                  
               .cases-formula__top__image.wow.simpleFadeIn(data-wow-delay='.4s')
                 svg(width='302px', height='299px', viewbox='0 0 302 299', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
                   defs
@@ -100,7 +106,7 @@ doctype html
                     p План продаж товаров через колл-центр составлял 90 продаж в день. Средний чек 135 долларов. Коллцентр выполнял данный kpi на 85% и делал около 75 продаж в день. Внедрение нашей формулы эффективной связи и наших решений позволило увеличить показатель ASR почти на 30%. Это, в свою очередь, обеспечило существенный рост продаж и позволило компании не только выполнять ежедневный план продаж, но и перевыполнить его на 15%. В итоге, отчет компании занимавшейся обзвоном абонентов в Китае, Гонконге и Сингапура свидетельствует об увеличение объема продаж на 108 000 долларов в месяц.    
                     p – Крупная CPA сеть
                 .solutions__card__icon
-                  i.ico.ico-circle
+                  i.ico.ico-circle(data-depth='3')
               // card
               .solutions__card
                 .solutions__card__left.wow.simpleFadeIn
@@ -111,7 +117,7 @@ doctype html
                     p Устойчивое увеличение объема клиентских депозитов на 10% на территории России и Прибалтики в результате повышения Answer Seizure ratio до 48% и Average Call Duration  до 3 минут.
                     p - Российский брокер бинарных опционов
                 .solutions__card__icon
-                  i.ico.ico-rectangle
+                  i.ico.ico-rectangle(data-depth='2')
               // card
               .solutions__card
                 .solutions__card__left.wow.simpleFadeIn
@@ -122,8 +128,17 @@ doctype html
                     p Двадцатипроцентное увеличение объема клиентских депозитов на территории Германии по итогам двух недель обзвона в результате двадцатипроцентного сокращения попадания вызовов на голосовую почту и автоответчики.
                     p - Международный брокер форекс и бинарных опционов
                 .solutions__card__icon
-                  i.ico.ico-triangle
-              
+                  i.ico.ico-triangle(data-depth='5')
+              // card
+              .solutions__card
+                .solutions__card__left.wow.simpleFadeIn
+                  .solutions__card__name
+                    img(src='images/casesMore.svg')
+                .solutions__card__right.wow.simpleFadeIn(data-wow-delay='.3s')
+                  .solutions__card__text.solutions__card__text--hero
+                    p Всё это примеры телекоммуникационных экспериментов и испытаний, которые мы делаем в лаборатории SANCOM для наших клиентов.   
+                    p Мы будем рады рассказать вам подробнее про эти и другие успешные и яркие кейсы при личной встрече.
+
         include shared/cta.pug
         
       include shared/footer.pug
