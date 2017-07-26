@@ -30,11 +30,29 @@ doctype html
                 .cases-formula__slider
                   .cases-formula__slide
                     .b-title Формула ASR:
-                    img(src='images/formula.png' srcset='images/formula@2x.png')
+                    .formula
+                      .formula__left ASR =
+                      .formula__center
+                        i.ico.ico-bracket-left
+                        .formula__center__exp
+                          .formula__center__exp__top сеансы связи
+                          .formula__center__exp__bottom попытки
+                        i.ico.ico-bracket-right
+                      .formula__right
+                        .formula__multiply * 
+                        | 100
+
                   .cases-formula__slide
                     .b-title Формула ACD:
-                    img(src='images/formula.png' srcset='images/formula@2x.png')
-                  
+                    .formula.formula--smaller
+                      .formula__left ACD =
+                      .formula__center
+                        i.ico.ico-bracket-left
+                        .formula__center__exp
+                          .formula__center__exp__top Продолжительность звонков
+                          .formula__center__exp__bottom Количество звонков
+                        i.ico.ico-bracket-right
+
               .cases-formula__top__image.wow.simpleFadeIn(data-wow-delay='.4s')
                 svg(width='302px', height='299px', viewbox='0 0 302 299', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
                   defs

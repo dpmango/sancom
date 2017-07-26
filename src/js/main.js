@@ -159,8 +159,9 @@ $(document).ready(function () {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 300,
-    slidesToShow: 1
+    speed: 500,
+    slidesToShow: 1,
+    fade: true
   });
 
   // CTA FORM

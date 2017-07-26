@@ -700,7 +700,7 @@
     align-items: center
     &__content
       min-width: 0
-      flex: 0 1 600px
+      flex: 0 0 600px
       display: flex
       flex-direction: column
       margin-right: 20px
@@ -709,7 +709,7 @@
         max-width: 100%
         display: inline-block
     &__image
-      flex: 0 0 300px
+      flex: 0 1 300px
       margin-left: auto
       svg, img
         max-width: 100%
@@ -741,7 +741,7 @@
       &__image
         flex: 0 0 250px
     &__text
-      margin-top: 100px
+      margin-top: 50px
 
 @media($tablet)
   .cases-formula
@@ -751,7 +751,7 @@
         display: none
     &__text
       flex-wrap: wrap
-      margin-top: 60px
+      margin-top: 00px
       &-col
         flex: 0 1 50%
 
@@ -873,3 +873,77 @@
           font-size: 56px
         &:last-child
           font-size: 42px
+
+
+.formula
+  color: white
+  font-weight: 900
+  display: flex
+  align-items: center
+  white-space: nowrap
+  &__left
+    font-size: 36px
+  &__center
+    display: flex
+    margin-left: 20px
+    margin-right: 15px
+    &__exp
+      position: relative
+      font-size: 24px
+      text-align: center
+      margin-left: 10px
+      margin-right: 10px
+      &::after
+        display: inline-block
+        content: ' '
+        position: absolute
+        left: 0
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        height: 3px
+        background: white
+        width: 100%
+      &__top
+        margin-top: 5px
+      &__bottom
+        position: absolute
+        bottom: 5px
+        left: 0
+        right: 0
+  &__right
+    font-size: 36px
+    display: flex
+    align-items: center
+  &__multiply
+    display: inline-block
+    line-height: 1
+    padding-top: 10px
+  &--smaller
+    .formula
+      &__center
+        &__exp
+          font-size: 18px
+          &__top
+            margin-top: 10px
+          &__bottom
+            bottom: 10px
+
+@media(width <= 900px)
+  .cases-formula__top__content
+    flex: 0 0 550px
+  .formula
+    transform-origin: left center
+    transform: scale(.8)
+
+@media(width <= 510px)
+  .formula
+    transform: scale(.7)
+
+@media(width <= 450px)
+  .formula
+    transform: scale(.6)
+
+@media(width <= 375px)
+  .formula
+    transform: scale(.5)
