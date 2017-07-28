@@ -215,13 +215,14 @@
 
 @media($mobile)
   .b-text
+    margin-left: 0
     &--small
       font-size: 16px
 
   .b-ext-text
     font-size: 24px
   .b-title
-    font-size: 32px
+    font-size: 30px
     span
       font-size: 38px
       &::after
@@ -485,8 +486,8 @@
         margin: 0
       &__content
         font-size: 16px
-        padding-left: 20px
-        padding-right: 20px
+        padding-left: 0px
+        padding-right: 0px
         margin-top: 10px
 
 
@@ -740,7 +741,7 @@
       opacity: 0
       transition: transform $transitionSpeed .2s $ease, opacity .4s ease
       display: flex
-      justify-content: space-between
+      justify-content: flex-start
       align-items: center
       a
         padding-right: 10px
@@ -850,8 +851,7 @@
 
 @media($mobile)
   .cta
-    &__wrapper
-      overflow: visible
+
     &__top-text
       font-size: 16px
       margin-top: 25px
@@ -867,12 +867,13 @@
         margin-right: auto
         padding-left: 0
       &__contacts
-        justify-content: center
+        justify-content: space-between
         padding-bottom: 10px
+        text-align: center
     &__text
       flex-direction: column
-      margin-left: 20px
-      margin-right: 20px
+      margin-left: 0px
+      margin-right: 0px
       &__left
         flex: 0 0 auto
         padding-right: 0
@@ -883,5 +884,5 @@
 @media($mobile-s)
   .cta
     &__form
-      margin-left: -20px
-      margin-right: -20px
+      .btn
+        width: 100%

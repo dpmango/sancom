@@ -66,10 +66,10 @@ body, html {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;}
-@media(max-width: 414px) {
+@media(max-width: 568px) {
   .container {
-    padding-left: 15px;
-    padding-right: 15px;}}
+    padding-left: 35px;
+    padding-right: 35px;}}
 .page {
   min-height: 100vh;
   display: -webkit-box;
@@ -458,7 +458,7 @@ button:focus {
   -webkit-transition: background .2s .15s ease-in;
   -o-transition: background .2s .15s ease-in;
   transition: background .2s .15s ease-in;
-  background-color: tomato;}
+  background-color: #39FF4A;}
 .hamburger--minus.is-active .hamburger-inner:before, .hamburger--minus.is-active .hamburger-inner:after {
   opacity: 0;
   -webkit-transition: bottom 0.08s ease-out, top 0.08s ease-out, opacity 0s 0.08s linear;
@@ -834,10 +834,8 @@ button:focus {
 .mobile-menu__list li a:hover {
   color: #39FF4A;}
 .mobile-menu .header__lang {
-    display: none;
-    position: absolute;
-    right: 2px;
-    top: -15px;}
+    margin-top: 20px;
+    font-size: 18px;}
 .mobile-menu__cta {
     margin-top: auto;
     -webkit-box-flex: 0;
@@ -1280,13 +1278,15 @@ button:focus {
     width: 44px;
     height: 28px;}}
 @media(max-width: 568px) {
+  .b-text {
+    margin-left: 0;}
     .b-text--small {
       font-size: 16px;}
 
   .b-ext-text {
     font-size: 24px;}
   .b-title {
-    font-size: 32px;}
+    font-size: 30px;}
     .b-title span {
       font-size: 38px;}
     .b-title span:after {
@@ -1585,8 +1585,8 @@ button:focus {
         margin: 0;}
       .benefits__item__content {
         font-size: 16px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
         margin-top: 10px;}}
 .slick-arrow {
   -webkit-apperance: none;
@@ -1932,10 +1932,10 @@ button:focus {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
@@ -2075,8 +2075,7 @@ button:focus {
               -ms-transform: scale(.85);
                   transform: scale(.85);}}
 @media(max-width: 568px) {
-    .cta__wrapper {
-      overflow: visible;}
+
     .cta__top-text {
       font-size: 16px;
       margin-top: 25px;}
@@ -2099,19 +2098,20 @@ button:focus {
         margin-right: auto;
         padding-left: 0;}
       .cta__form__contacts {
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        padding-bottom: 10px;}
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding-bottom: 10px;
+        text-align: center;}
     .cta__text {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column;
-      margin-left: 20px;
-      margin-right: 20px;}
+      margin-left: 0px;
+      margin-right: 0px;}
       .cta__text__left {
         -webkit-box-flex: 0;
         -webkit-flex: 0 0 auto;
@@ -2125,9 +2125,8 @@ button:focus {
                 flex: 0 0 auto;
         padding-left: 0;}}
 @media(max-width: 414px) {
-    .cta__form {
-      margin-left: -20px;
-      margin-right: -20px;}}
+      .cta__form .btn {
+        width: 100%;}}
 /* SOME INNER PAGES CONTENT */
 /* ABOUT */
 .about-head {
@@ -2460,6 +2459,8 @@ button:focus {
               flex: 0 0 auto;
       margin-left: auto;}}
 @media(max-width: 568px) {
+    .about-client__left {
+      padding-left: 0;}
     .about-client__wrapper {
       margin-top: 25px;}}
 /* ABOUT SERVICE */
@@ -2657,7 +2658,8 @@ button:focus {
         font-size: 22px;}}
 @media(max-width: 568px) {
     .about-team__wrapper {
-      padding-top: 70px;}
+      padding-top: 70px;
+      margin-left: 0;}
     .about-team__image {
       position: absolute;
       top: 50%;
