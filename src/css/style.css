@@ -1024,7 +1024,8 @@ button:focus {
   background: -o-linear-gradient(top, #3A1E67, #6000FF);
   background: linear-gradient(to bottom, #3A1E67, #6000FF);
   color: white;
-  overflow-x: hidden;}
+  overflow-x: hidden;
+  overflow-y: hidden;}
 .hero__wrapper {
     position: relative;
     height: 750px;
@@ -1152,11 +1153,7 @@ button:focus {
       margin-right: 0px;}}
 @media(max-width: 785px) {
     .about__wrapper {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;}
+      display: block;}
     .about__text {
       margin-right: 5%;}
       .about__text .b-text {
@@ -1178,6 +1175,12 @@ button:focus {
         margin-left: auto;
         margin-right: auto;}}
 @media(max-width: 414px) {
+    .about__text {
+      margin-right: 0;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 0 auto;
+          -ms-flex: 1 0 auto;
+              flex: 1 0 auto;}
     .about__block {
       margin-left: -0px;
       margin-right: -0px;}}
@@ -1284,9 +1287,12 @@ button:focus {
     right: -50px;
     width: 38px;
     height: 24px;}}
-@media(max-width: 568px) {
+@media(max-width: 414px) {
   .b-title {
-    word-break: break-all;}}
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    width: 100%;}}
 /* METRICS */
 .metrics {
   background: #F5F5F5;
@@ -1586,7 +1592,8 @@ button:focus {
         margin-top: 10px;}}
 @media(max-width: 414px) {
         .benefits__item__content .btn {
-          width: 100%;}}
+          width: 99%;
+          margin-left: 0.5%;}}
 .slick-arrow {
   -webkit-apperance: none;
   position: absolute;
@@ -1649,7 +1656,7 @@ button:focus {
     margin: 0;
     padding: 0;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -2074,7 +2081,6 @@ button:focus {
               -ms-transform: scale(.85);
                   transform: scale(.85);}}
 @media(max-width: 568px) {
-
     .cta__top-text {
       font-size: 16px;
       margin-top: 25px;}
@@ -2124,6 +2130,8 @@ button:focus {
                 flex: 0 0 auto;
         padding-left: 0;}}
 @media(max-width: 414px) {
+      .cta__form input {
+        font-size: 22px;}
       .cta__form .btn {
         width: 100%;}}
 /* SOME INNER PAGES CONTENT */

@@ -3,6 +3,7 @@
   background: linear-gradient(to bottom, #3A1E67, #6000FF)
   color: white
   overflow-x: hidden
+  overflow-y: hidden
   &__wrapper
     position: relative
     height: 750px
@@ -103,7 +104,7 @@
 @media($tablet)
   .about
     &__wrapper
-      flex-direction: column
+      display: block
     &__text
       margin-right: 5%
       .b-text
@@ -123,6 +124,9 @@
 
 @media($mobile-s)
   .about
+    &__text
+      margin-right: 0
+      flex: 1 0 auto
     &__block
       margin-left: -0px
       margin-right: -0px
@@ -229,9 +233,12 @@
         right: -50px
         size: 38px 24px
 
-@media($mobile)
+@media($mobile-s)
   .b-title
-    word-break: break-all
+    word-wrap: break-word
+    overflow-wrap: break-word
+    word-break: break-word
+    width: 100%
 
 // METRICS
 .metrics
@@ -497,7 +504,8 @@
     &__item
       &__content
         .btn
-          width: 100%
+          width: 99%
+          margin-left: 0.5%
 
 
 .slick-arrow
@@ -556,7 +564,7 @@
     margin: 0
     padding: 0
     position: absolute
-    bottom: 0
+    bottom: -10px
     left: 50%
     transform: translateX(-50%)
 
@@ -860,7 +868,6 @@
 
 @media($mobile)
   .cta
-
     &__top-text
       font-size: 16px
       margin-top: 25px
@@ -893,5 +900,7 @@
 @media($mobile-s)
   .cta
     &__form
+      input
+        font-size: 22px
       .btn
         width: 100%
