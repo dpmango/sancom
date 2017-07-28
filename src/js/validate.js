@@ -23,16 +23,18 @@ $(document).ready(function () {
     $(element).removeClass("has-error");
   };
   var validateSubmitHandler = function validateSubmitHandler(form) {
+
     $(form).addClass('loading');
     $.ajax({
       type: "POST",
       url: $(form).attr('action'),
       data: $(form).serialize(),
+      dataType: "json",
       success: function success(response) {
-        $(form).removeClass('loading');
-        var data = $.parseJSON(response);
-        if (data.status == 'success') {
-          // do something I can't test
+
+        if (response.success) {
+
+          $("#cta_action_button").html($("#cta_action_button").data('success-message')).addClass('disable');
         } else {
           $(form).find('[data-error]').html(data.message).show();
         }
@@ -87,12 +89,11 @@ $(document).ready(function () {
       password: {
         required: "Заполните это поле",
         email: "Пароль мимимум 6 символов"
-      }
-      // phone: {
-      //     required: "Заполните это поле",
-      //     minlength: "Введите корректный телефон"
-      // }
-    }
+        // phone: {
+        //     required: "Заполните это поле",
+        //     minlength: "Введите корректный телефон"
+        // }
+      } }
   });
 
   /////////////////////

@@ -27,6 +27,7 @@
       #letters
         fill: $colorGreen
   &__menu
+    min-width: 0
     flex: 0 1 auto
     margin-left: auto
     margin-right: auto
@@ -48,6 +49,7 @@
       &:hover
         color: $colorGreen
   &__lang
+    min-width: 0
     margin-top: -2px
     position: relative
     flex: 0 0 50px
@@ -102,11 +104,13 @@
           &:nth-child(5)
             transition-delay: .1s
   &__cta
+    min-width: 0
     flex: 0 0 auto
     letter-spacing: .25px
     font-weight: 500
     font-size: 10px
     text-transform: uppercase
+    white-space: nowrap
     color: $colorGreen
     transition: all $transitionSpeed $ease
     a
@@ -115,6 +119,7 @@
     &:hover
       color: white
   &__hamburger
+    min-width: 0
     opacity: 0
     width: 1px
     margin-left: 0px
@@ -163,6 +168,11 @@
       &::before, &::after
         background-color: black
 
+@media(height <= 650px)
+  .header
+    &--transformed
+      padding: 5px 0
+
 @media(width <= 1020px)
   .header
     &__menu
@@ -177,6 +187,7 @@
     &__hamburger
       margin-left: 20px
       width: auto
+      flex: 0 0 50px
       transform: translate3d(0,0,0)
       opacity: 1
 
@@ -296,6 +307,13 @@
     top: 100px
     .mobile-menu__wrapper
       min-height: calc(100vh - 100px)
+
+@media(height <= 650px)
+  .mobile-menu
+    &--scrolled
+      top: 80px
+      .mobile-menu__wrapper
+        min-height: calc(100vh - 80px)
 
 @media(width <= 840px)
   .mobile-menu

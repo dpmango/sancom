@@ -4,8 +4,8 @@
   color: white
   &__wrapper
     position: relative
-    min-height: 100vh
-    max-height: 900px
+    height: 100vh
+    max-height: 750px
     padding-top: 130px
     display: flex
     .b-title
@@ -320,6 +320,7 @@
 .formula
   padding-top: 55px
   padding-bottom: 70px
+  max-width: 100%
   &--hero
     padding-top: 200px
   &__wrapper
@@ -332,7 +333,9 @@
     margin-top: 40px
     display: flex
   &__step
+    min-width: 0
     flex: 0 1 260px
+    max-width: 260px
     margin-right: 40px
     &:last-child
       margin-right: 0

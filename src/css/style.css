@@ -417,8 +417,8 @@ button:focus {
   margin: 0;
   overflow: visible;}
 .hamburger:hover .hamburger-inner:before, .hamburger:hover .hamburger-inner:after {
-  -webkit-transform: translate3d(0,0,0);
-          transform: translate3d(0,0,0);}
+  -webkit-transform: translate3d(7px,0,0);
+          transform: translate3d(7px,0,0);}
 .hamburger-box {
   width: 35px;
   height: 30px;
@@ -429,24 +429,18 @@ button:focus {
   display: block;
   top: 50%;
   margin-top: -2px;
-  width: 35px;
+  width: 37px;
   height: 3px;
   background-color: white;
   position: absolute;}
 .hamburger-inner:before, .hamburger-inner:after {
-  width: 35px;
+  width: 37px;
   height: 3px;
   background-color: white;
   position: absolute;
   -webkit-transition: all 0.15s ease;
   -o-transition: all 0.15s ease;
   transition: all 0.15s ease;}
-.hamburger-inner:before {
-  -webkit-transform: translate3d(7px,0,0);
-          transform: translate3d(7px,0,0);}
-.hamburger-inner:after {
-  -webkit-transform: translate3d(14px,0,0);
-          transform: translate3d(14px,0,0);}
 .hamburger-inner:before, .hamburger-inner:after {
   content: "";
   display: block;}
@@ -515,6 +509,7 @@ button:focus {
 .header__logo:hover #letters {
         fill: #39FF4A;}
 .header__menu {
+    min-width: 0;
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
@@ -540,6 +535,7 @@ button:focus {
 .header__menu a:hover {
   color: #39FF4A;}
 .header__lang {
+    min-width: 0;
     margin-top: -2px;
     position: relative;
     -webkit-box-flex: 0;
@@ -619,6 +615,7 @@ button:focus {
        -o-transition-delay: .1s;
           transition-delay: .1s;}
 .header__cta {
+    min-width: 0;
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 auto;
         -ms-flex: 0 0 auto;
@@ -627,6 +624,7 @@ button:focus {
     font-weight: 500;
     font-size: 10px;
     text-transform: uppercase;
+    white-space: nowrap;
     color: #39FF4A;
     -webkit-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
@@ -637,6 +635,7 @@ button:focus {
 .header__cta:hover {
   color: white;}
 .header__hamburger {
+    min-width: 0;
     opacity: 0;
     width: 1px;
     margin-left: 0px;
@@ -692,6 +691,9 @@ button:focus {
       background-color: black;}
 .header--dark .hamburger-inner:before, .header--dark .hamburger-inner:after {
   background-color: black;}
+@media(max-height: 650px) {
+    .header--transformed {
+      padding: 5px 0;}}
 @media(max-width: 1020px) {
         .header__menu li span {
           display: none;}}
@@ -701,6 +703,10 @@ button:focus {
     .header__hamburger {
       margin-left: 20px;
       width: auto;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 50px;
+          -ms-flex: 0 0 50px;
+              flex: 0 0 50px;
       -webkit-transform: translate3d(0,0,0);
               transform: translate3d(0,0,0);
       opacity: 1;}}
@@ -870,6 +876,12 @@ button:focus {
 .mobile-menu--scrolled .mobile-menu__wrapper {
       min-height: -webkit-calc(100vh - 100px);
       min-height: calc(100vh - 100px);}
+@media(max-height: 650px) {
+    .mobile-menu--scrolled {
+      top: 80px;}
+      .mobile-menu--scrolled .mobile-menu__wrapper {
+        min-height: -webkit-calc(100vh - 80px);
+        min-height: calc(100vh - 80px);}}
 @media(max-width: 840px) {
   .mobile-menu {
     display: block;}}
@@ -1024,8 +1036,8 @@ button:focus {
   color: white;}
 .hero__wrapper {
     position: relative;
-    min-height: 100vh;
-    max-height: 900px;
+    height: 100vh;
+    max-height: 750px;
     padding-top: 130px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1387,7 +1399,8 @@ button:focus {
 /* FORMULA */
 .formula {
   padding-top: 55px;
-  padding-bottom: 70px;}
+  padding-bottom: 70px;
+  max-width: 100%;}
 .formula--hero {
     padding-top: 200px;}
 .formula__wrapper {
@@ -1403,10 +1416,12 @@ button:focus {
     display: -ms-flexbox;
     display: flex;}
 .formula__step {
+    min-width: 0;
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 260px;
         -ms-flex: 0 1 260px;
             flex: 0 1 260px;
+    max-width: 260px;
     margin-right: 40px;}
 .formula__step:last-child {
   margin-right: 0;}
@@ -3137,8 +3152,10 @@ button:focus {
     font-size: 56px;}
       .cases-grow__metric span:last-child {
     font-size: 42px;}}
-.formula {
+.t-formula {
   color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-weight: 900;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3149,22 +3166,22 @@ button:focus {
       -ms-flex-align: center;
           align-items: center;
   white-space: nowrap;}
-.formula__left {
+.t-formula__left {
     font-size: 36px;}
-.formula__center {
+.t-formula__center {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     margin-left: 20px;
     margin-right: 15px;}
-.formula__center__exp {
+.t-formula__center__exp {
       position: relative;
       font-size: 24px;
       text-align: center;
       margin-left: 10px;
       margin-right: 10px;}
-.formula__center__exp:after {
+.t-formula__center__exp:after {
   display: inline-block;
   content: ' ';
   position: absolute;
@@ -3177,14 +3194,14 @@ button:focus {
   height: 3px;
   background: white;
   width: 100%;}
-.formula__center__exp__top {
+.t-formula__center__exp__top {
         margin-top: 5px;}
-.formula__center__exp__bottom {
+.t-formula__center__exp__bottom {
         position: absolute;
         bottom: 5px;
         left: 0;
         right: 0;}
-.formula__right {
+.t-formula__right {
     font-size: 36px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -3194,15 +3211,15 @@ button:focus {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;}
-.formula__multiply {
+.t-formula__multiply {
     display: inline-block;
     line-height: 1;
     padding-top: 10px;}
-.formula--smaller .formula__center__exp {
+.t-formula--smaller .t-formula__center__exp {
           font-size: 18px;}
-.formula--smaller .formula__center__exp__top {
+.t-formula--smaller .t-formula__center__exp__top {
             margin-top: 10px;}
-.formula--smaller .formula__center__exp__bottom {
+.t-formula--smaller .t-formula__center__exp__bottom {
             bottom: 10px;}
 @media(max-width: 900px) {
   .cases-formula__top__content {
@@ -3210,7 +3227,7 @@ button:focus {
     -webkit-flex: 0 0 550px;
         -ms-flex: 0 0 550px;
             flex: 0 0 550px;}
-  .formula {
+  .t-formula {
     -webkit-transform-origin: left center;
         -ms-transform-origin: left center;
             transform-origin: left center;
@@ -3218,17 +3235,17 @@ button:focus {
         -ms-transform: scale(.8);
             transform: scale(.8);}}
 @media(max-width: 510px) {
-  .formula {
+  .t-formula {
     -webkit-transform: scale(.7);
         -ms-transform: scale(.7);
             transform: scale(.7);}}
 @media(max-width: 450px) {
-  .formula {
+  .t-formula {
     -webkit-transform: scale(.6);
         -ms-transform: scale(.6);
             transform: scale(.6);}}
 @media(max-width: 375px) {
-  .formula {
+  .t-formula {
     -webkit-transform: scale(.5);
         -ms-transform: scale(.5);
             transform: scale(.5);}}

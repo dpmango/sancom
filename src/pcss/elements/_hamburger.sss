@@ -17,7 +17,7 @@
   &:hover
     .hamburger-inner
       &::before, &::after
-        transform: translate3d(0,0,0)
+        transform: translate3d(7px,0,0)
 
 .hamburger-box
   width: 35px
@@ -30,20 +30,16 @@
   display: block
   top: 50%
   margin-top: -2px
-  width: 35px
+  width: 37px
   height: 3px
   background-color: white
   position: absolute
   &::before, &::after
-    width: 35px
+    width: 37px
     height: 3px
     background-color: white
     position: absolute
     transition: all 0.15s ease
-  &::before
-    transform: translate3d(7px,0,0)
-  &::after
-    transform: translate3d(14px,0,0)
   &::before, &::after
     content: ""
     display: block
