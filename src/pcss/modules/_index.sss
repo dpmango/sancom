@@ -2,10 +2,10 @@
 .hero
   background: linear-gradient(to bottom, #3A1E67, #6000FF)
   color: white
+  overflow-x: hidden
   &__wrapper
     position: relative
-    height: 100vh
-    max-height: 750px
+    height: 750px
     padding-top: 130px
     display: flex
     .b-title
@@ -123,10 +123,9 @@
 
 @media($mobile-s)
   .about
-    padding-bottom: 0
     &__block
-      margin-left: -20px
-      margin-right: -20px
+      margin-left: -0px
+      margin-right: -0px
 
 // COMMON
 .b-text
@@ -229,6 +228,10 @@
         top: 10px
         right: -50px
         size: 38px 24px
+
+@media($mobile)
+  .b-title
+    word-break: break-all
 
 // METRICS
 .metrics
@@ -410,9 +413,8 @@
   padding-top: 70px
   padding-bottom: 100px
   &__wrapper
-    display: -webkit-flex
-    display: -ms-flex
     display: flex
+    align-items: center
     margin-top: 40px
   &__text
     flex: 0 1 360px
@@ -489,6 +491,13 @@
         padding-left: 0px
         padding-right: 0px
         margin-top: 10px
+
+@media($mobile-s)
+  .benefits
+    &__item
+      &__content
+        .btn
+          width: 100%
 
 
 .slick-arrow

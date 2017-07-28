@@ -635,21 +635,12 @@ button:focus {
 .header__cta:hover {
   color: white;}
 .header__hamburger {
+    display: none;
     min-width: 0;
     opacity: 0;
-    width: 1px;
-    margin-left: 0px;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 0px;
-        -ms-flex: 0 0 0px;
-            flex: 0 0 0%;
-    -webkit-transform: translate3d(100%,0,0);
-            transform: translate3d(100%,0,0);
-    -webkit-transition: -webkit-transform .25s ease-in;
-    transition: -webkit-transform .25s ease-in;
-    -o-transition: transform .25s ease-in;
-    transition: transform .25s ease-in;
-    transition: transform .25s ease-in, -webkit-transform .25s ease-in;}
+    -webkit-transition: opacity .25s ease-in;
+    -o-transition: opacity .25s ease-in;
+    transition: opacity .25s ease-in;}
 .header--transformed {
     position: fixed;
     opacity: 0;
@@ -701,6 +692,7 @@ button:focus {
     .header__menu {
       display: none;}
     .header__hamburger {
+      display: block;
       margin-left: 20px;
       width: auto;
       -webkit-box-flex: 0;
@@ -1031,11 +1023,11 @@ button:focus {
   background: -webkit-linear-gradient(top, #3A1E67, #6000FF);
   background: -o-linear-gradient(top, #3A1E67, #6000FF);
   background: linear-gradient(to bottom, #3A1E67, #6000FF);
-  color: white;}
+  color: white;
+  overflow-x: hidden;}
 .hero__wrapper {
     position: relative;
-    height: 100vh;
-    max-height: 750px;
+    height: 750px;
     padding-top: 130px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1186,11 +1178,9 @@ button:focus {
         margin-left: auto;
         margin-right: auto;}}
 @media(max-width: 414px) {
-  .about {
-    padding-bottom: 0;}
     .about__block {
-      margin-left: -20px;
-      margin-right: -20px;}}
+      margin-left: -0px;
+      margin-right: -0px;}}
 /* COMMON */
 .b-text {
   font-size: 25px;
@@ -1294,6 +1284,9 @@ button:focus {
     right: -50px;
     width: 38px;
     height: 24px;}}
+@media(max-width: 568px) {
+  .b-title {
+    word-break: break-all;}}
 /* METRICS */
 .metrics {
   background: #F5F5F5;
@@ -1489,11 +1482,14 @@ button:focus {
   padding-top: 70px;
   padding-bottom: 100px;}
 .promo__wrapper {
-    display: -webkit-flex;
-    display: -ms-flex;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 40px;}
 .promo__text {
     -webkit-box-flex: 0;
@@ -1588,6 +1584,9 @@ button:focus {
         padding-left: 0px;
         padding-right: 0px;
         margin-top: 10px;}}
+@media(max-width: 414px) {
+        .benefits__item__content .btn {
+          width: 100%;}}
 .slick-arrow {
   -webkit-apperance: none;
   position: absolute;
@@ -2593,6 +2592,9 @@ button:focus {
         max-width: 150px;}}
 .about-team {
   padding: 90px 0 60px 0;}
+.about-team .b-title {
+    position: relative;
+    z-index: 3;}
 .about-team__wrapper {
     position: relative;
     margin-left: 8.6%;}
