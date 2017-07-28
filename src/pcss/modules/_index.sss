@@ -239,6 +239,8 @@
     overflow-wrap: break-word
     word-break: break-word
     width: 100%
+    font-size: 26px
+    line-height: 36px
 
 // METRICS
 .metrics
@@ -412,6 +414,13 @@
       margin-left: 0
     &__step
       margin-right: 0
+      text-align: left
+      &:nth-child(1)
+        .formula__step__num
+          margin-left: -20px
+      &:nth-child(2)
+        .formula__step__num
+          margin-left: -7px
 
 // PROMO
 .promo
@@ -762,7 +771,8 @@
       justify-content: flex-start
       align-items: center
       a
-        padding-right: 10px
+        padding-right: 7%
+        text-align: center
         &:last-child
           padding-right: 0
         &:hover
@@ -771,6 +781,7 @@
               color: $colorGreen
           .ico-viber
             background-image: svg-load('../../images/svg/viber.svg', fill=$colorGreen)
+
       .icon
         &::before
           transition: color $transitionSpeed $ease
@@ -887,6 +898,8 @@
         justify-content: space-between
         padding-bottom: 10px
         text-align: center
+        a
+          padding-right: 10px
     &__text
       flex-direction: column
       margin-left: 0px
