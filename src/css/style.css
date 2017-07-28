@@ -1607,6 +1607,7 @@ button:focus {
   height: 45px;
   background-color: transparent;
   font-size: 0;
+  z-index: 5;
   cursor: pointer;
   -webkit-transition: all .25s ease-in-out;
   -o-transition: all .25s ease-in-out;
