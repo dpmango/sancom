@@ -610,6 +610,14 @@ button:focus {
   -webkit-transition-delay: .5s;
        -o-transition-delay: .5s;
           transition-delay: .5s;}
+.header__lang__drop span:nth-child(6) {
+  -webkit-transition-delay: .6s;
+       -o-transition-delay: .6s;
+          transition-delay: .6s;}
+.header__lang__drop span:nth-child(7) {
+  -webkit-transition-delay: .7s;
+       -o-transition-delay: .7s;
+          transition-delay: .7s;}
 .header__lang__drop.active {
   pointer-events: all;}
 .header__lang__drop.active span {
@@ -617,25 +625,43 @@ button:focus {
                   transform: translate3d(0,0,0);
           opacity: 1;}
 .header__lang__drop.reverseDelay span:nth-child(1) {
+  -webkit-transition-delay: .7s;
+       -o-transition-delay: .7s;
+          transition-delay: .7s;}
+.header__lang__drop.reverseDelay span:nth-child(2) {
+  -webkit-transition-delay: .6s;
+       -o-transition-delay: .6s;
+          transition-delay: .6s;}
+.header__lang__drop.reverseDelay span:nth-child(3) {
   -webkit-transition-delay: .5s;
        -o-transition-delay: .5s;
           transition-delay: .5s;}
-.header__lang__drop.reverseDelay span:nth-child(2) {
+.header__lang__drop.reverseDelay span:nth-child(4) {
   -webkit-transition-delay: .4s;
        -o-transition-delay: .4s;
           transition-delay: .4s;}
-.header__lang__drop.reverseDelay span:nth-child(3) {
+.header__lang__drop.reverseDelay span:nth-child(5) {
   -webkit-transition-delay: .3s;
        -o-transition-delay: .3s;
           transition-delay: .3s;}
-.header__lang__drop.reverseDelay span:nth-child(4) {
+.header__lang__drop.reverseDelay span:nth-child(6) {
   -webkit-transition-delay: .2s;
        -o-transition-delay: .2s;
           transition-delay: .2s;}
-.header__lang__drop.reverseDelay span:nth-child(5) {
+.header__lang__drop.reverseDelay span:nth-child(7) {
   -webkit-transition-delay: .1s;
        -o-transition-delay: .1s;
           transition-delay: .1s;}
+.header__lang__drop.header__lang__drop--vertical {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;}
+.header__lang__drop.header__lang__drop--vertical span {
+          display: inline-block;
+          margin-right: 18px;}
+.header__lang__drop.header__lang__drop--vertical span:last-child {
+  margin-right: 0;}
 .header__cta {
     min-width: 0;
     -webkit-box-flex: 0;
