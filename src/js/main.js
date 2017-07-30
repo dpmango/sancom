@@ -164,6 +164,59 @@ $(document).ready(function () {
     fade: true
   });
 
+  // slick team sliders
+  var teamSliderOptionsFirst = {
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    dots: false,
+    fade: false,
+    slidesToShow: 1,
+    pauseOnHover: false,
+    touchMove: false,
+    draggable: false,
+    swipe: false,
+    vertical: true
+  };
+
+  var teamSliderOptions = {
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    dots: false,
+    fade: false,
+    slidesToShow: 1,
+    touchMove: false,
+    draggable: false,
+    swipe: false,
+    vertical: true
+  };
+
+  $('.js-teamSlider').each(function (i, val) {
+    // check if this is first child
+    if (i == 0) {
+      $(val).slick(teamSliderOptionsFirst);
+    } else {
+      $(val).slick(teamSliderOptions);
+    }
+  });
+
+  // emulate snake behaviour
+  $('.js-teamSlider--1').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    // navigate second slider
+    setTimeout(function () {
+      $('.js-teamSlider--2').slick('slickNext');
+    }, 500);
+    // navigate thrird slider
+    setTimeout(function () {
+      $('.js-teamSlider--3').slick('slickNext');
+    }, 500);
+    // navigate thrird slider
+    setTimeout(function () {
+      $('.js-teamSlider--4').slick('slickNext');
+    }, 500);
+  });
+
   // CTA FORM
   var ctaFormTogglerText;
   $('.cta__form__toggler').on('click', function () {
