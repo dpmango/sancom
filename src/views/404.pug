@@ -1,0 +1,27 @@
+doctype html
+<!--[if IE 8]>         <html class="ie8 oldie"> <![endif]-->
+<!--[if IE 9]>         <html class="ie9 oldie"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class=""> <!--<![endif]-->
+  include shared/head.pug
+
+  body
+    .page
+      include shared/header-404.pug
+
+      .page__content
+        // HOME::START
+        .not-found
+          .container
+            .not-found__wrapper
+              .not-found__content
+                .not-found__title 404
+                .not-found__description  Запрошенная вами страница не найдена
+                .not-found__note Проверьте, правильно ли указан адрес страницы
+                .not-found__cta
+                  a(href='index.html').btn.btn--primary.btn--white
+                    span Обратно к результату 
+                  
+
+
+      include shared/footer.pug
+    include shared/scripts.pug

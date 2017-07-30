@@ -2262,6 +2262,56 @@ button:focus {
         font-size: 22px;}
       .cta__form .btn {
         width: 100%;}}
+/* 404 page */
+.not-found {
+  background: #6000FF;}
+.not-found .container {
+    overflow: visible;}
+.not-found__wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 120px;
+    min-height: 100vh;}
+.not-found__wrapper:after {
+  display: inline-block;
+  content: ' ';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  left: -30px;
+  background: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8'?%3E %3Csvg width='792px' height='768px' viewBox='0 0 792 768' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 45 (43475) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3E404_bg%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='pages' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='404'%3E %3Cg id='404_bg' transform='translate(-375.000000, -577.000000)'%3E %3Cpolygon id='Fill-16-Copy' fill='%23FFFFFF' points='858.727829 880.605079 70.6050792 1658.75482 0 1588.14974 788.120321 810'/%3E %3Cpolygon id='Fill-16-Copy-2' fill='%2339FF4A' points='1679.72783 70.6050792 891.605079 848.754817 821 778.149737 1609.12032 0'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E") no-repeat 0 0;
+  z-index: 3;}
+.not-found__content {
+    position: relative;
+    z-index: 4;
+    max-width: 560px;
+    margin: auto 0 auto auto;}
+.not-found__title {
+    color: #39FF4A;
+    font-size: 138px;
+    font-weight: 900;
+    line-height: .5;}
+.not-found__description {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;}
+.not-found__note {
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;}
+.not-found__cta {
+    margin-top: 50px;}
 /* SOME INNER PAGES CONTENT */
 /* ABOUT */
 .about-head {
