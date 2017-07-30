@@ -105,10 +105,12 @@
           display: inline-block
     &__huge
       color: $colorGreen
-      font-size: 85px
+      font-size: 80px
       font-weight: 900
       line-height: 1
+      text-transform: uppercase
       span
+        text-transform: lowercase
         color: color($colorGreen a(50%))
     &__hint
       position: absolute
@@ -178,17 +180,17 @@
         padding-left: 30px
         display: inline-block
 
-@media(width <= 1100px)
+@media(width <= 1130px)
   .about-name
     &__title
       &__huge
-        font-size: 74px
+        font-size: 67px
 
 @media($desktop)
   .about-name
     &__title
       &__huge
-        font-size: 65px
+        font-size: 60px
 
 @media($tablet)
   .about-name
@@ -196,7 +198,7 @@
     padding-bottom: 60px
     &__title
       &__huge
-        font-size: 50px
+        font-size: 45px
     &__description
       flex-direction: column
     &__left
@@ -228,8 +230,9 @@
   .about-name
     &__title
       &__huge
+        font-size: 40px
         span
-          font-size: 40px
+          font-size: 36px
 
 
 
@@ -237,8 +240,9 @@
   .about-name
     &__title
       &__huge
+        font-size: 38px
         span
-          font-size: 22px
+          font-size: 24px
 
 
 .about-client
