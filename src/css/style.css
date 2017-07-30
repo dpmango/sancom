@@ -320,6 +320,17 @@ body, html {
     width: 14.2px;
     height: 86px;
     background-size: contain;}
+.ico-close {
+    background: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8'?%3E %3Csvg width='31px' height='31px' viewBox='0 0 31 31' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 45 (43475) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3Eclose%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Symbols' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='form-sent' transform='translate(-1031.000000, -265.000000)' stroke='%2339FF4A' stroke-width='2'%3E %3Cg id='close' transform='translate(1031.000000, 266.000000)'%3E %3Cpath d='M29.6298755,0.255911449 L0.702779915,29.183007' id='Path-2'/%3E %3Cpath d='M29.6298755,0.255911449 L0.702779915,29.183007' id='Path-2' transform='translate(15.166328, 14.719459) scale(-1, 1) translate(-15.166328, -14.719459) '/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E") no-repeat center;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    cursor: pointer;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;}
+.ico-close:hover {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='UTF-8'?%3E %3Csvg width='31px' height='31px' viewBox='0 0 31 31' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 45 (43475) - http://www.bohemiancoding.com/sketch --%3E %3Ctitle%3Eclose%3C/title%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs/%3E %3Cg id='Symbols' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='form-sent' transform='translate(-1031.000000, -265.000000)' stroke='%23FFF' stroke-width='2'%3E %3Cg id='close' transform='translate(1031.000000, 266.000000)'%3E %3Cpath d='M29.6298755,0.255911449 L0.702779915,29.183007' id='Path-2'/%3E %3Cpath d='M29.6298755,0.255911449 L0.702779915,29.183007' id='Path-2' transform='translate(15.166328, 14.719459) scale(-1, 1) translate(-15.166328, -14.719459) '/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");}
 /* buttons */
 button {
   border: 0;
@@ -1981,6 +1992,61 @@ button:focus {
         font-size: 44px;}
 .cta__form__contacts .icon-email {
         font-size: 35px;}
+.cta__form__sucess {
+      background: -webkit-gradient(linear, right top, left top, from(#39FF4A), to(#6000FF));
+      background: -webkit-linear-gradient(right, #39FF4A, #6000FF);
+      background: -o-linear-gradient(right, #39FF4A, #6000FF);
+      background: linear-gradient(to left, #39FF4A, #6000FF);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      opacity: 0;
+      z-index: 5;
+      opacity: 0;
+      -webkit-transform: translate3d(0,-100%,0);
+              transform: translate3d(0,-100%,0);
+      -webkit-transition: all .25s ease-in-out;
+      -o-transition: all .25s ease-in-out;
+      transition: all .25s ease-in-out;}
+.cta__form__sucess.active {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);}
+.cta__form__sucess__wrapper {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1 1 0%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        color: white;
+        max-width: 760px;
+        padding: 10px 20px;
+        margin: auto;}
+.cta__form__sucess__name {
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: .55px;}
+.cta__form__sucess__text {
+        padding-top: 5px;
+        font-size: 20px;
+        margin-left: 20px;}
 .cta__form.slide {
   background: #6000FF;}
 .cta__form.slide:after {
@@ -2088,7 +2154,16 @@ button:focus {
           margin: 10px 0;
           -webkit-transform: scale(.85);
               -ms-transform: scale(.85);
-                  transform: scale(.85);}}
+                  transform: scale(.85);}
+        .cta__form__sucess__wrapper {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          text-align: center;}
+        .cta__form__sucess__text {
+          margin: 10px 0;}}
 @media(max-width: 568px) {
     .cta__top-text {
       font-size: 16px;
@@ -2120,6 +2195,11 @@ button:focus {
         text-align: center;}
         .cta__form__contacts a {
           padding-right: 10px;}
+        .cta__form__sucess__name {
+          font-size: 24px;}
+        .cta__form__sucess__text {
+          font-size: 18px;
+          margin-bottom: 20px;}
     .cta__text {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;

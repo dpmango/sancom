@@ -34,3 +34,11 @@
     background: svg-load('../../images/svg/bracket-right.svg', fill=#FFF) no-repeat center
     size: 14.2px 86px
     background-size: contain
+  &-close
+    background: svg-load('../../images/svg/close.svg') no-repeat center
+    size: 30px
+    background-size: contain
+    cursor: pointer
+    transition: all $transitionSpeed $ease
+    &:hover
+      background-image: svg-load('../../images/svg/close-hover.svg')

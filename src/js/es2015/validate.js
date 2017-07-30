@@ -102,6 +102,9 @@ $(document).ready(function(){
   $(".js-validateCta").validate({
     errorPlacement: validateErrorPlacement,
     highlight: function highlight(element) {
+      // remove for production
+      $('.cta__form__sucess').addClass('active');
+
       $(element).parent().find('button').addClass("no-no");
       $(element).addClass('has-error');
       setTimeout(function () {
@@ -123,4 +126,9 @@ $(document).ready(function(){
       }
     }
   });
+});
+
+// what it does is removes class on close click
+$('.cta__form__sucess .ico').on('click', function(){
+  $(this).closest('.cta__form__sucess').removeClass('active');
 });
