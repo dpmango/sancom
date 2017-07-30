@@ -289,10 +289,21 @@ body, html {
   background-size: contain;
   vertical-align: middle;}
 .ico-circle {
+    position: relative;
     background: #39FF4A;
     width: 24px;
     height: 24px;
     border-radius: 50%;}
+.ico-circle:after {
+  display: inline-block;
+  content: ' ';
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;}
 .ico-rectangle {
     width: 26px;
     height: 26px;

@@ -9,9 +9,20 @@
   vertical-align: middle
 
   &-circle
+    position: relative
     background: $colorGreen
     size: 24px
     border-radius: 50%
+    &::after
+      display: inline-block
+      content: ' '
+      position: absolute
+      right: 2px
+      top: 2px
+      size: 6px
+      border-radius: 50%
+      background: white
+
   &-rectangle
     size: 26px
     background: $colorPurple
