@@ -1004,3 +1004,39 @@
     color: white
   &__cta
     margin-top: 50px
+
+@media(width <= 1070px)
+  .not-found
+    &__wrapper
+      &::after
+        left: -300px
+
+
+@media(width <= 810px)
+  .not-found
+    &__content
+      max-width: 450px
+    &__title
+      font-size: 110px
+    &__description
+
+      font-size: 24px
+    &__note
+      font-size: 18px
+    &__cta
+      margin-top: 30px
+
+
+@media($mobile)
+  .not-found
+    &__wrapper
+      &::after
+        left: -400px
+        top: -50px
+    &__content
+      max-width: 350px
+    &__title
+      font-size: 100px
+    &__description
+      margin-top: 40px
+      font-size: 20px

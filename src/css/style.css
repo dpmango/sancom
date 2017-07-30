@@ -2312,6 +2312,32 @@ button:focus {
     color: white;}
 .not-found__cta {
     margin-top: 50px;}
+@media(max-width: 1070px) {
+    .not-found__wrapper:after {
+    left: -300px;}}
+@media(max-width: 810px) {
+    .not-found__content {
+      max-width: 450px;}
+    .not-found__title {
+      font-size: 110px;}
+    .not-found__description {
+
+      font-size: 24px;}
+    .not-found__note {
+      font-size: 18px;}
+    .not-found__cta {
+      margin-top: 30px;}}
+@media(max-width: 568px) {
+    .not-found__wrapper:after {
+    left: -400px;
+    top: -50px;}
+    .not-found__content {
+      max-width: 350px;}
+    .not-found__title {
+      font-size: 100px;}
+    .not-found__description {
+      margin-top: 40px;
+      font-size: 20px;}}
 /* SOME INNER PAGES CONTENT */
 /* ABOUT */
 .about-head {
