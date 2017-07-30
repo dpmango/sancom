@@ -57,7 +57,7 @@ gulp.task('build', function (callback) {
     'pug',
     'postcss',
     'babel',
-    ['useref', 'images', 'fonts'],
+    ['useref', 'images', 'fonts', 'favicon'],
     'cssnano',
     callback
   )
@@ -162,6 +162,13 @@ gulp.task('fonts', function() {
   return gulp.src('./src/fonts/**/*')
   .pipe(gulp.dest('dist/fonts'))
 })
+
+gulp.task('favicon', function() {
+  return gulp.src('./src/favicon/**/*')
+  .pipe(gulp.dest('dist/favicon'))
+})
+
+
 
 gulp.task('clean:dist', function() {
   return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);

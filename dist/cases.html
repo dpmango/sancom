@@ -6,6 +6,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Sancom</title>
+  <!-- favicon-->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -47,7 +65,7 @@
           </ul>
           <div class="header__lang">
             <div class="header__lang__visible">RUS</div>
-            <div class="header__lang__drop"> <span>ENG</span><span>U.S.</span><span>NL FR</span><span>UK</span></div>
+            <div class="header__lang__drop header__lang__drop--vertical"><span>ENG</span><span>U.S.</span><span>NL</span><span> FR</span><span>UK</span><span>SMTH</span></div>
           </div>
           <div class="header__cta"><a href="#sectionCTA">Соединяем с результатом</a></div>
           <div class="header__hamburger">
@@ -65,6 +83,10 @@
             <li><a href="cases.html">Кейсы / результаты</a></li>
             <li><a href="projects.html">Продукты / решения</a></li>
           </ul>
+          <div class="header__lang">
+            <div class="header__lang__visible">RUS</div>
+            <div class="header__lang__drop"><span>ENG</span><span>U.S.</span><span>NL</span><span> FR</span><span>UK</span><span>SMTH</span></div>
+          </div>
           <div class="mobile-menu__cta"><a href="#sectionCTA" data-offset="90">Соединяем с результатом</a></div>
         </div>
       </div>
@@ -94,28 +116,31 @@
               <div class="cases-formula__slider">
                 <div class="cases-formula__slide">
                   <div class="b-title">Формула ASR:</div>
-                  <div class="formula">
-                    <div class="formula__left">ASR =</div>
-                    <div class="formula__center"><i class="ico ico-bracket-left"></i>
-                      <div class="formula__center__exp">
-                        <div class="formula__center__exp__top">сеансы связи</div>
-                        <div class="formula__center__exp__bottom">попытки</div>
+                  <div class="t-formula">
+                    <div class="t-formula__left">ASR =</div>
+                    <div class="t-formula__center"><i class="ico ico-bracket-left"></i>
+                      <div class="t-formula__center__exp">
+                        <div class="t-formula__center__exp__top">сеансы связи</div>
+                        <div class="t-formula__center__exp__bottom">попытки</div>
                       </div><i class="ico ico-bracket-right"></i>
                     </div>
-                    <div class="formula__right">
-                      <div class="formula__multiply">* </div>100
+                    <div class="t-formula__right">
+                      <div class="t-formula__multiply">* </div>100
                     </div>
                   </div>
                 </div>
                 <div class="cases-formula__slide">
                   <div class="b-title">Формула ACD:</div>
-                  <div class="formula formula--smaller">
-                    <div class="formula__left">ACD =</div>
-                    <div class="formula__center"><i class="ico ico-bracket-left"></i>
-                      <div class="formula__center__exp">
-                        <div class="formula__center__exp__top">Продолжительность звонков</div>
-                        <div class="formula__center__exp__bottom">Количество звонков</div>
+                  <div class="t-formula t-formula--smaller">
+                    <div class="t-formula__left">ACD =</div>
+                    <div class="t-formula__center"><i class="ico ico-bracket-left"></i>
+                      <div class="t-formula__center__exp">
+                        <div class="t-formula__center__exp__top">Продолжительность звонков</div>
+                        <div class="t-formula__center__exp__bottom">Количество звонков</div>
                       </div><i class="ico ico-bracket-right"></i>
+                    </div>
+                    <div class="t-formula__right">
+                      <div class="t-formula__multiply">* </div>100
                     </div>
                   </div>
                 </div>
@@ -208,7 +233,7 @@
                   <p>– Крупная CPA сеть</p>
                 </div>
               </div>
-              <div class="solutions__card__icon"><i class="ico ico-circle" data-depth="3"></i></div>
+              <div class="solutions__card__icon"><i class="ico ico-circle" data-depth="2"></i></div>
             </div>
             <!-- card-->
             <div class="solutions__card">
@@ -261,11 +286,17 @@
             <div class="cta__top-text wow simpleFadeIn" data-wow-delay=".15s">Проведите свой собственный эксперимент связи  <br> и протестируйте решения SANCOM на ваших задачах уже сегодня.  Это совершенно бесплатно!</div>
             <div class="cta__form wow simpleFadeIn" data-wow-delay=".3s">
               <form class="js-validateCta" action="">
-                <input type="tel" name="phone" placeholder="+ 7 ___ ">
+                <input type="tel" name="phone" placeholder="номер телефона" data-maxlength="11">
                 <button class="btn btn--primary btn--white" type="submit"><span>Сделать запрос</span></button>
               </form>
               <div class="cta__form__contacts"><a href="#"><i class="icon icon-skype"></i></a><a href="#"><i class="icon icon-telegram"></i></a><a href="#"><i class="icon icon-whatup"> </i></a><a href="#"><i class="ico ico-viber"></i></a><a href="#"><i class="icon icon-fb-messenger"></i></a><a href="#"><i class="icon icon-email"></i></a></div>
               <div class="cta__form__toggler" data-text="Оставить запрос" data-action="to-contacts"><span>Другие способы связи</span></div>
+              <div class="cta__form__sucess">
+                <div class="cta__form__sucess__wrapper">
+                  <div class="cta__form__sucess__name">Отправлено!</div>
+                  <div class="cta__form__sucess__text">Мы свяжемся с вами в ближайшее время.</div><i class="ico ico-close"></i>
+                </div>
+              </div>
             </div>
             <div class="cta__text wow simpleFadeIn" data-wow-delay=".6s">
               <div class="cta__text__left">
