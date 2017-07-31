@@ -2145,7 +2145,7 @@ button:focus {
       padding: 55px 30px;
       margin-left: -20px;
       margin-right: -20px;}}
-@media(max-width: 785px) {
+@media(max-width: 750px) {
   .cta {
     padding: 60px 0 55px 0;}
     .cta__wrapper {
@@ -2154,9 +2154,13 @@ button:focus {
       font-size: 18px;
       margin-top: 35px;}
     .cta__form {
+      /* flex-direction: column */
       padding: 40px 30px;
       margin-left: 0;
-      margin-right: 0;}
+      margin-right: 0;
+      /* &__toggler */
+      /*   padding-top: 40px */
+      /*   margin-right: auto */}
       .cta__form form {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -2192,6 +2196,7 @@ button:focus {
           -webkit-transform: scale(.85);
               -ms-transform: scale(.85);
                   transform: scale(.85);}
+      /*   padding-left: 0 */
         .cta__form__sucess__wrapper {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
