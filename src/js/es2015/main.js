@@ -169,13 +169,14 @@ $(document).ready(function(){
     autoplaySpeed: 5000,
     arrows: false,
     dots: false,
-    fade: false,
+    fade: true,
     slidesToShow: 1,
     pauseOnHover: false,
     touchMove: false,
     draggable: false,
     swipe: false,
-    vertical: true
+    vertical: false,
+    adaptiveHeight: true
   }
 
   var teamSliderOptions = {
@@ -183,12 +184,13 @@ $(document).ready(function(){
     autoplaySpeed: 5000,
     arrows: false,
     dots: false,
-    fade: false,
+    fade: true,
     slidesToShow: 1,
     touchMove: false,
     draggable: false,
     swipe: false,
-    vertical: true
+    vertical: false,
+    adaptiveHeight: true
   }
 
   $('.js-teamSlider').each(function(i,val){
