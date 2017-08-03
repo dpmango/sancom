@@ -59,6 +59,7 @@
     font-size: 12px
     font-weight: 500
     line-height: 1.8
+    text-transform: uppercase
     &__visible
       text-decoration: underline
       cursor: pointer
@@ -248,7 +249,7 @@
     flex-direction: column
     overflow-y: scroll
     position: relative
-    padding: 50px 25px
+    padding: 50px 25px 100px 25px
     text-align: center
     min-height: calc(100vh - 150px)
     background: $colorPurple
@@ -276,10 +277,9 @@
   &__list
     margin: 0
     padding: 0
-    display: -webkit-flex
-    display: -ms-flex
     display: flex
     flex-direction: column
+    text-transform: uppercase
     li
       font-weight: 500
       flex: 0 0 auto
@@ -300,6 +300,7 @@
     font-size: 15px
     text-transform: uppercase
     color: $colorGreen
+    text-transform: uppercase
     transition: all $transitionSpeed $ease
     a
       padding: 15px

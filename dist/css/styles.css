@@ -1166,7 +1166,8 @@ button:focus {
     color: #39FF4A;
     font-size: 12px;
     font-weight: 500;
-    line-height: 1.8;}
+    line-height: 1.8;
+    text-transform: uppercase;}
 .header__lang__visible {
       text-decoration: underline;
       cursor: pointer;}
@@ -1398,7 +1399,7 @@ button:focus {
             flex-direction: column;
     overflow-y: scroll;
     position: relative;
-    padding: 50px 25px;
+    padding: 50px 25px 100px 25px;
     text-align: center;
     min-height: -webkit-calc(100vh - 150px);
     min-height: calc(100vh - 150px);
@@ -1445,16 +1446,16 @@ button:focus {
 .mobile-menu__list {
     margin: 0;
     padding: 0;
-    display: -webkit-flex;
-    display: -ms-flex;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column;}
+            flex-direction: column;
+    text-transform: uppercase;}
 .mobile-menu__list li {
       font-weight: 500;
       -webkit-box-flex: 0;
@@ -1483,6 +1484,7 @@ button:focus {
     font-size: 15px;
     text-transform: uppercase;
     color: #39FF4A;
+    text-transform: uppercase;
     -webkit-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;}
@@ -1894,6 +1896,8 @@ button:focus {
     font-size: 42px;}
     .b-title span {
       font-size: 50px;}
+    .b-title span:before {
+    bottom: 5px;}
     .b-title span:after {
     top: 15px;
     right: -60px;
@@ -1911,6 +1915,8 @@ button:focus {
     font-size: 38px;}
     .b-title span {
       font-size: 44px;}
+    .b-title span:before {
+    bottom: 0s;}
     .b-title span:after {
     top: 10px;
     width: 44px;
@@ -1927,6 +1933,8 @@ button:focus {
     font-size: 30px;}
     .b-title span {
       font-size: 38px;}
+    .b-title span:before {
+    bottom: 2px;}
     .b-title span:after {
     top: 10px;
     right: -50px;
