@@ -943,6 +943,8 @@ button:focus {
         min-height: calc(100vh - 80px);}}
 /* FOOTER */
 .footer {
+  position: relative;
+  z-index: 10;
   -webkit-box-flex: 0;
   -webkit-flex: 0;
       -ms-flex: 0;
