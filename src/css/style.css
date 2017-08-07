@@ -888,11 +888,15 @@ button:focus {
     text-transform: uppercase;
     color: #39FF4A;
     text-transform: uppercase;
+    text-align: center;
     -webkit-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;}
 .mobile-menu__cta a {
-      padding: 15px;}
+      display: inline-block;
+      padding: 15px;
+      width: 100%;
+      line-height: 1.5;}
 .mobile-menu__cta:hover {
   color: white;}
 .mobile-menu.active {
